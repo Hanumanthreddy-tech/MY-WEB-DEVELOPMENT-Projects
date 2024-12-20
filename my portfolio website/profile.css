@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bokor&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@600&family=Faculty+Glyphic&family=Ga+Maamli&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Barcode+39&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Ponnala&family=Protest+Revolution&family=Rubik+Mono+One&family=Sacramento&family=Sarina&family=Satisfy&family=Sofia&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.main-portfolio-website {
+    background-color: rgb(19, 20, 24);
+    font-family: "Open Sans", serif;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.heading-name {
+    color: white;
+    font-family: "Berkshire Swash", serif;
+    text-shadow: 0px 0px 10px white;
+    font-size: 30px;
+}
+
+.folio-name {
+    color: aqua;
+    font-family: "Pacifico", serif;
+    text-shadow: 0px 0px 10px cyan;
+}
+
+.nav-link {
+    font-size: 1.1em;
+    transition: 0.3s;
+    color: white;
+}
+
+.nav-link:hover {
+    color: aqua !important;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cv-btn {
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 550;
+    transition: 0.5s;
+    background-color: cyan;
+    color: rgb(18, 8, 8);
+}
+
+.cv-btn:hover {
+    box-shadow: 0px 0px 5px cyan,
+        0px 0px 10px cyan,
+        0px 0px 15px cyan,
+        0px 0px 20px cyan;
+}
+
+.navbar-toggler {
+    border: solid 3px cyan;
+}
+
+.navbar-toggler:hover {
+    box-shadow: 0px 0px 5px cyan,
+        0px 0px 8px cyan,
+        0px 0px 14px cyan,
+        0px 0px 20px cyan;
+    border-radius: 15px;
+}
+
+
+
+
+/*my Profile*/
+.image-photo {
+    height: 350px;
+    padding: 5px;
+    margin-left: 50px;
+    filter: drop-shadow(0px 0px 20px cyan);
+    border: solid 3px cyan;
+    border-radius: 50%;
+}
+
+@media screen and (orientation:landscape) {
+    .image-photo {
+        height: 350px;
+        margin-left: 140px;
+        padding: 5px;
+        filter: drop-shadow(0px 0px 20px cyan);
+        border: solid 3px cyan;
+        border-radius: 50%;
+    }
+}
+
+.profile-section {
+    margin-top: 150px;
+}
+
+h5 {
+    color: white;
+    text-shadow: 0px 0px 15px white;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px white;
+    font-family: "Kanit", serif;
+    letter-spacing: 2px;
+}
+
+.image-shdw {
+    filter: drop-shadow(0px 0px 50px cyan);
+}
+
+.developer {
+    color: cyan;
+    text-shadow: none;
+    padding-left: 8px;
+    text-shadow: 0px 0px 15px cyan;
+}
+
+.sdgggg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para-bio {
+    color: white;
+    text-shadow: 0px 0px 20px white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    gap: 40px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: cyan;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    transform: rotate(360deg);
+    font-size: 23px;
+    text-shadow: 0px 0px 5px cyan,
+        0px 0px 7px cyan,
+        0px 0px 10px cyan,
+        0px 0px 15px cyan;
+    color: black;
+}
+
+.Hire-me-btn {
+    padding: 5px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    margin-right: 5px;
+    background: transparent;
+    border: 2px solid cyan;
+    color: white;
+    transition: .4s;
+}
+
+.contact-me-btn {
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 2px solid cyan;
+    background: transparent;
+    color: white;
+    transition: .4s;
+
+}
+
+.contact-me-btn:hover,
+.Hire-me-btn:hover {
+    background-color: cyan;
+    color: black;
+    box-shadow: 0px 0px 3px cyan,
+        0px 0px 7px cyan,
+        0px 0px 10px cyan,
+        0px 0px 15px cyan;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.sub-projects {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-right: 2px solid white;
+    padding: 15px 10px;
+    height: 80px;
+}
+
+.projects .sub-projects p {
+    color: white;
+}
+
+/* about me section */
+.about-main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.about-me-image {
+    height: 300px;
+    box-shadow: 0px 0px 20px cyan;
+    border-radius: 10%;
+}
+
+@media screen and (orientation:landscape) {
+    .about-me-image {
+        height: 300px;
+        margin-left: 150px;
+        box-shadow: 0px 0px 20px cyan;
+        border-radius: 10%;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .about-me-image {
+        height: 300px;
+        margin-left: 80px;
+        box-shadow: 0px 0px 20px cyan;
+        border-radius: 10%;
+    }
+}
+
+.me {
+    color: cyan;
+    text-shadow: 0px 0px 10px cyan;
+    text-decoration: underline white;
+}
+
+.about-para {
+    color: white;
+}
+
+.about-name {
+    text-decoration: underline cyan;
+}
+
+.about-btn {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 2px solid cyan;
+    background: transparent;
+    color: white;
+    transition: .5s;
+}
+
+.about-btn:hover {
+    box-shadow: 0px 0px 5px cyan,
+        0px 0px 10px cyan,
+        0px 0px 15px cyan,
+        0px 0px 20px cyan;
+    background-color: cyan;
+    color: black;
+}
+
+
+
+/*Web services*/
+.web-name {
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.code {
+    font-size: 35px;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.web-para {
+    font-size: 14px;
+}
+
+.learn-more {
+    font-size: 13px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+    color: rgb(3, 36, 40);
+}
+
+.web-design {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(58, 86, 88);
+    color: white;
+    border-radius: 10px;
+    line-height: 20px;
+    transition: all .5s ease-in-out 0.1s;
+}
+
+.web-design:hover {
+    background-color: cyan;
+    color: black;
+    transform: translateY(-10px);
+}
+
+/*COURSES*/
+.courses-name {
+    display: flex;
+    justify-content: space-around;
+}
+
+.subject-sourses {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tik-mark {
+    color: white;
+    background-color: rgb(243, 2, 122);
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: center;
+    height: 18px;
+    border-radius: 50%;
+    line-height: 1px;
+    padding: 1px;
+    font-size: 15px;
+}
+
+.couses-bg {
+    border: solid 1px cyan;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    color: white;
+
+}
+
+@media screen and (max-width:600px) {
+    .couses-bg {
+        margin-bottom: 15px;
+    }
+}
+
+.couses-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: cyan;
+    transition: 0.9s;
+    z-index: -1;
+}
+
+.couses-bg:hover::before {
+    width: 100%;
+}
+
+.couses-bg:hover {
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+}
+
+.title-name {
+    text-align: center;
+    margin-bottom: 30px;
+}

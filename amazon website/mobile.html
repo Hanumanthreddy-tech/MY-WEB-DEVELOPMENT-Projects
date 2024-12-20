@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-like Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bokor&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@600&family=Faculty+Glyphic&family=Ga+Maamli&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Ponnala&family=Protest+Revolution&family=Rubik+Mono+One&family=Sacramento&family=Sarina&family=Satisfy&family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bokor&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@600&family=Faculty+Glyphic&family=Ga+Maamli&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Pacifico&family=Ponnala&family=Protest+Revolution&family=Rubik+Mono+One&family=Sacramento&family=Sarina&family=Satisfy&family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32ffb05717.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mobile.css"> <!-- Link to external CSS -->
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo d-none d-md-block"><a href="#" class="text-white">Amazon</a></div>
+            <div class="search-bar">
+                <input type="text" class="form-control" placeholder="Search for products">
+            </div>
+            <div class="header-links">
+                <a href="#" class="text-white">Sign In</a> <br>
+                <a href="#" class="text-white">Cart</a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+    <!-- Main Carousel Section -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733101458/mobile_offers_r80saa.webp" class="d-block w-100 carousel-image" alt="Sale 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733101458/mobile_offers_2_fw949l.webp" class="d-block w-100 carousel-image" alt="Sale 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733226782/offer_electronics_p95qkp.webp" class="d-block w-100 carousel-image" alt="Sale 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733226730/offer_electronics_image_g0v73c.webp" class="d-block w-100 carousel-image" alt="Sale 2">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Product Categories Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="viii col-md-3">
+                <h5>Categories</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Mobiles</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                </ul>
+                <h5 class="name-in">RAM</h5><br>
+                <label><input type="checkbox" name="" id=""> 4 GB</label><br><br>
+                <label><input type="checkbox" name="" id=""> 3 GB</label><br><br>
+                <label><input type="checkbox" name="" id=""> 2 GB</label><br><br>
+                <label><input type="checkbox" name="" id=""> 8 GB and Above</label><br><br>
+                <label><input type="checkbox" name="" id=""> 6 GB</label><br><br>
+                <label><input type="checkbox" name="" id=""> 6 GB and Above</label><br><br>
+                <label><input type="checkbox" name="" id=""> 1 GB and Below</label><br><br>
+
+                <h5 class="name-in">INTERNAL STORAGE</h5><br>
+                <label><input type="checkbox" name="" id=""> 256 GB & Above</label><br><br>
+                <label><input type="checkbox" name="" id=""> 128-255.9 GB</label><br><br>
+                <label><input type="checkbox" name="" id=""> 64-127.9 GB</label><br><br>
+                <label><input type="checkbox" name="" id=""> 32-63.9 GB</label><br><br>
+                <label><input type="checkbox" name="" id=""> 16-31.9 GB</label><br><br>
+                <label><input type="checkbox" name="" id=""> 8-15.9 GB</label><br><br>
+
+                <h5 class="name-in">BATTERY CAPACITY</h5><br>
+                <label><input type="checkbox" name="" id=""> 2000-2999 mAh</label><br><br>
+                <label><input type="checkbox" name="" id=""> 3000-3999 mAh</label><br><br>
+                <label><input type="checkbox" name="" id=""> 4000-4999 mAh</label><br><br>
+                <label><input type="checkbox" name="" id=""> 5000-5999 mAh</label><br><br>
+                <label><input type="checkbox" name="" id=""> 5000mAh Above</label><br><br>
+                <label><input type="checkbox" name="" id=""> 6000 mAh & Above</label><br><br>
+
+                <h5 class="name-in">SIM TYPE</h5>
+                <label><input type="checkbox" name="" id=""> Dual Sim</label><br><br>
+                <label><input type="checkbox" name="" id=""> Single Sim</label><br><br>
+                <button class="btn btn-warning mb-3">Apply Filters</button>
+                <br>
+            </div>
+            <div class="col-md-9">
+                <h3 class="mt-3">Featured Products</h3>
+                <div class="row">
+                    <div class="col-12 d-md-none">
+                        <div class="mobile-details-flex">
+                            <a href="https://www.flipkart.com/apple-iphone-15-blue-128-gb/p/itmbf14ef54f645d?pid=MOBGTAGPAQNVFZZY&lid=LSTMOBGTAGPAQNVFZZYQRLPCQ&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_4&otracker=clp_bannerads_1_4.bannerAdCard.BANNERADS_iphone%2B15_mobile-phones-store_WXKBWWGTJ2WO&fm=organic&iid=dc37e9a2-8b09-49f9-93f1-057152d43411.MOBGTAGPAQNVFZZY.SEARCH&ppt=clp&ppn=mobile-phones-store&ssid=v4i1uqrpm80000001733671579224" target="_blank">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733536887/IMG_20241207_072938_hojlhi.jpg" alt="mobile-image" height="150px">
+                                <div class="">
+                                    <p class="mobile-name m-0">Apple iPhone 15 Plus (Blue,128GB)</p>
+                            </a>
+
+                            <div class="mobile-image-stars m-0">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star-half-stroke star"></i>
+                                <p class="mobile-reviewrs-count m-0">(34,970)</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                                <p class="mobile-price m-0"><span class="mobile-percentage">18%</span><span class="decoration-price">79,900</span>&#8377;64,999</p>
+                            </div>
+                            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+                            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;3,600</span> Off on Exchange</p>
+                            <div class="d-flex m-0">
+                                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+                            </div>
+                            <p class="warranty-mobile">1 year warranty by vivo</p>
+                        </div>
+                    </div>
+                    <p class="Specifications-mobile m-2">6 GB RAM | 128 GB Storage</p>
+                    <p class="Specifications-display m-2">17.02 cm(6.72 inch) Super Retina XDR Display| 6000mAh</p>
+                    <p class="Specifications-ram m-2">48MP+12MP | 12MP Front Camera</p>
+                </div>
+
+                <div class="col-12 d-none d-md-block">
+                    <div class="d-flex">
+                        <a href="https://www.flipkart.com/apple-iphone-15-blue-128-gb/p/itmbf14ef54f645d?pid=MOBGTAGPAQNVFZZY&lid=LSTMOBGTAGPAQNVFZZYQRLPCQ&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_4&otracker=clp_bannerads_1_4.bannerAdCard.BANNERADS_iphone%2B15_mobile-phones-store_WXKBWWGTJ2WO&fm=organic&iid=dc37e9a2-8b09-49f9-93f1-057152d43411.MOBGTAGPAQNVFZZY.SEARCH&ppt=clp&ppn=mobile-phones-store&ssid=v4i1uqrpm80000001733671579224" target="_blank">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733536887/IMG_20241207_072938_hojlhi.jpg" alt="mobile-image" height="190px" width="170px">
+                            <div>
+                                <p class="mobile-name mb-0 ms-4">Apple iPhone 15 Plus (Blue,128GB)</p>
+                        </a>
+
+                        <div class="d-flex  ms-4">
+                            <div class="mobile-rating-md ">
+                                <p class="rating1-md">4.6</p>
+                                <i class="fa-solid fa-star starr"></i>
+                            </div>
+                            <p class="ratings-md">34,952 Ratings & 1,967 Reviews</p>
+                        </div>
+                        <div class="points-mobile-md ">
+                            <ul>
+                                <li>6 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
+                                <li>17.02 cm (6.7inch) Super Retina XDR Display</li>
+                                <li>48MP + 12 MP | 12 MP Front Camera</li>
+                                <li>A16 Bionic Chip, 6 Core Processor </li>
+                                <li>1 year warranty for phone and 1 year warranty for in the box accessories</li>
+                            </ul>
+                            <div>
+                                <p class="mobile-price-md m-0">&#8377;64,999</p>
+                                <p class="mobile-percentage-md m-0"><span class="decoration-md">&#8377;79,900 </span><span class="ddggg">18% off</span></p>
+                                <p class="delivery-md m-0">Free delivery by <span class="free-delivery-md">10th Dec</span></p>
+                                <p class="blue-offer m-0">Save extra with combo offers</p>
+                                <p class="exchange m-0">Upto <span class="price-off">&#8377;60,000</span> Off on Exchange</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="d-none d-md-block">
+        <div class="col-12 d-none d-md-block">
+            <div class="d-flex">
+                <a href="https://www.flipkart.com/apple-iphone-15-green-128-gb/p/itm235cd318bde73?pid=MOBGTAGPYYWZRUJX&lid=LSTMOBGTAGPYYWZRUJXUGY7PM&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_3&otracker=clp_bannerads_1_4.bannerAdCard.BANNERADS_iphone%2B15_mobile-phones-store_WXKBWWGTJ2WO&fm=organic&iid=dc37e9a2-8b09-49f9-93f1-057152d43411.MOBGTAGPYYWZRUJX.SEARCH&ppt=browse&ppn=browse&ssid=v4i1uqrpm80000001733671579224" target="_blank">
+                    <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733536887/IMG_20241207_072905_gzjlni.jpg" alt="mobile-image" height="190px" width="170px">
+                    <div>
+                        <p class="mobile-name mb-0 ms-4">Apple iPhone 15 Plus (Green,128GB)</p>
+                </a>
+
+                <div class="d-flex  ms-4">
+                    <div class="mobile-rating-md ">
+                        <p class="rating1-md">4.6</p>
+                        <i class="fa-solid fa-star starr"></i>
+                    </div>
+                    <p class="ratings-md">34,952 Ratings & 1,967 Reviews</p>
+                </div>
+                <div class="points-mobile-md ">
+                    <ul>
+                        <li>6 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
+                        <li>17.02 cm (6.7inch) Super Retina XDR Display</li>
+                        <li>48MP + 12 MP | 12 MP Front Camera</li>
+                        <li>A16 Bionic Chip, 6 Core Processor </li>
+                        <li>1 year warranty for phone and 1 year warranty for in the box accessories</li>
+                    </ul>
+                    <div>
+                        <p class="mobile-price-md m-0">&#8377;64,999</p>
+                        <p class="mobile-percentage-md m-0"><span class="decoration-md">&#8377;79,900 </span><span class="ddggg">18% off</span></p>
+                        <p class="delivery-md m-0">Free delivery by <span class="free-delivery-md">10th Dec</span></p>
+                        <p class="blue-offer m-0">Save extra with combo offers</p>
+                        <p class="exchange m-0">Upto <span class="price-off">&#8377;60,000</span> Off on Exchange</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="d-none d-md-block">
+    <div class="col-12 d-none d-md-block">
+        <div class="d-flex">
+            <a href="https://www.flipkart.com/apple-iphone-15-black-512-gb/p/itm232a6b488abe2?pid=MOBGTAGPEXNGM7BM&lid=LSTMOBGTAGPEXNGM7BMICZNTD&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_6&otracker=clp_bannerads_1_4.bannerAdCard.BANNERADS_iphone%2B15_mobile-phones-store_WXKBWWGTJ2WO&fm=organic&iid=dc37e9a2-8b09-49f9-93f1-057152d43411.MOBGTAGPEXNGM7BM.SEARCH&ppt=clp&ppn=mobile-phones-store&ssid=v4i1uqrpm80000001733671579224" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733536888/IMG_20241207_072922_k7dxyk.jpg" alt="mobile-image" height="190px" width="170px">
+
+                <div>
+                    <p class="mobile-name mb-0 ms-4">Apple iPhone 15 Plus (Black,128GB)</p>
+            </a>
+            <div class="d-flex  ms-4">
+                <div class="mobile-rating-md ">
+                    <p class="rating1-md">4.6</p>
+                    <i class="fa-solid fa-star starr"></i>
+                </div>
+                <p class="ratings-md">34,952 Ratings & 1,967 Reviews</p>
+            </div>
+            <div class="points-mobile-md ">
+                <ul>
+                    <li>6 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
+                    <li>17.02 cm (6.7inch) Super Retina XDR Display</li>
+                    <li>48MP + 12 MP | 12 MP Front Camera</li>
+                    <li>A16 Bionic Chip, 6 Core Processor </li>
+                    <li>1 year warranty for phone and 1 year warranty for in the box accessories</li>
+                </ul>
+                <div>
+                    <p class="mobile-price-md m-0">&#8377;64,999</p>
+                    <p class="mobile-percentage-md m-0"><span class="decoration-md">&#8377;79,900 </span><span class="ddggg">18% off</span></p>
+                    <p class="delivery-md m-0">Free delivery by <span class="free-delivery-md">10th Dec</span></p>
+                    <p class="blue-offer m-0">Save extra with combo offers</p>
+                    <p class="exchange m-0">Upto <span class="price-off">&#8377;60,000</span> Off on Exchange</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr class="d-none d-md-block">
+    <div class="col-12 d-none d-md-block">
+        <div class="d-flex">
+            <a href="https://www.flipkart.com/apple-iphone-15-pink-256-gb/p/itmd205d11e1959e?pid=MOBGTAGPFDXBQ9BH&lid=LSTMOBGTAGPFDXBQ9BHQXXTMI&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_10&otracker=clp_bannerads_1_4.bannerAdCard.BANNERADS_iphone%2B15_mobile-phones-store_WXKBWWGTJ2WO&fm=organic&iid=dc37e9a2-8b09-49f9-93f1-057152d43411.MOBGTAGPFDXBQ9BH.SEARCH&ppt=clp&ppn=mobile-phones-store&ssid=v4i1uqrpm80000001733671579224" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733536887/IMG_20241207_072846_u2l3py.jpg" alt="mobile-image" height="190px" width="170px">
+                <div>
+                    <p class="mobile-name mb-0 ms-4">Apple iPhone 15 Plus (Pink,128GB)</p>
+            </a>
+
+            <div class="d-flex  ms-4">
+                <div class="mobile-rating-md ">
+                    <p class="rating1-md">4.6</p>
+                    <i class="fa-solid fa-star starr"></i>
+                </div>
+                <p class="ratings-md">34,952 Ratings & 1,967 Reviews</p>
+            </div>
+            <div class="points-mobile-md ">
+                <ul>
+                    <li>6 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
+                    <li>17.02 cm (6.7inch) Super Retina XDR Display</li>
+                    <li>48MP + 12 MP | 12 MP Front Camera</li>
+                    <li>A16 Bionic Chip, 6 Core Processor </li>
+                    <li>1 year warranty for phone and 1 year warranty for in the box accessories</li>
+                </ul>
+                <div>
+                    <p class="mobile-price-md m-0">&#8377;64,999</p>
+                    <p class="mobile-percentage-md m-0"><span class="decoration-md">&#8377;79,900 </span><span class="ddggg">18% off</span></p>
+                    <p class="delivery-md m-0">Free delivery by <span class="free-delivery-md">10th Dec</span></p>
+                    <p class="blue-offer m-0">Save extra with combo offers</p>
+                    <p class="exchange m-0">Upto <span class="price-off">&#8377;60,000</span> Off on Exchange</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <hr class="d-none d-md-block">
+    <div class="col-12 d-none d-md-block">
+        <div class="d-flex">
+            <a href="https://www.flipkart.com/vivo-t3x-5g-sapphire-blue-128-gb/p/itm263ed44f56cd5?pid=MOBH4EAC8GFJXHHP&lid=LSTMOBH4EAC8GFJXHHPMYAKQS&marketplace=FLIPKART&q=vivo+t3+5g&store=tyy%2F4io&srno=s_1_14&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=organic&iid=a15e5a09-2c40-429e-ac91-6c800d1d89f8.MOBH4EAC8GFJXHHP.SEARCH&ppt=pp&ppn=pp&ssid=aefl93efb40000001733672125154&qH=dcba9c2cffedc3cb" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733536887/IMG_20241207_073047_ygychl.jpg" alt="mobile-image" height="190px" width="170px">
+                <div>
+                    <p class="mobile-name mb-0 ms-4">Vivo T3 x 5G (Blue,128GB)</p>
+            </a>
+
+            <div class="d-flex  ms-4">
+                <div class="mobile-rating-md ">
+                    <p class="rating1-md">4.6</p>
+                    <i class="fa-solid fa-star starr"></i>
+                </div>
+                <p class="ratings-md">34,952 Ratings & 1,967 Reviews</p>
+            </div>
+            <div class="points-mobile-md ">
+                <ul>
+                    <li>6 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
+                    <li>17.02 cm (6.7inch) Super Retina XDR Display</li>
+                    <li>48MP + 12 MP | 12 MP Front Camera</li>
+                    <li>A16 Bionic Chip, 6 Core Processor </li>
+                    <li>1 year warranty for phone and 1 year warranty for in the box accessories</li>
+                </ul>
+                <div>
+                    <p class="mobile-price-md m-0">&#8377;24,999</p>
+                    <p class="mobile-percentage-md m-0"><span class="decoration-md">&#8377;30,900 </span><span class="ddggg">10% off</span></p>
+                    <p class="delivery-md m-0">Free delivery by <span class="free-delivery-md">10th Dec</span></p>
+                    <p class="blue-offer m-0">Save extra with combo offers</p>
+                    <p class="exchange m-0">Upto <span class="price-off">&#8377;10,000</span> Off on Exchange</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr class="d-none d-md-block">
+
+    <div class="col-12 d-none d-md-block">
+        <div class="d-flex">
+            <a href="https://www.flipkart.com/vivo-t3x-5g-crimson-bliss-128-gb/p/itm263ed44f56cd5?pid=MOBGZRNEQGWCCN4D&lid=LSTMOBGZRNEQGWCCN4DPIBMCT&marketplace=FLIPKART&q=vivo+t3+5g&store=tyy%2F4io&srno=s_1_12&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=organic&iid=a15e5a09-2c40-429e-ac91-6c800d1d89f8.MOBGZRNEQGWCCN4D.SEARCH&ppt=pp&ppn=pp&ssid=aefl93efb40000001733672125154&qH=dcba9c2cffedc3cb" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733536887/IMG_20241207_073102_yvev9p.jpg" alt="mobile-image" height="190px" width="170px">
+                <div>
+                    <p class="mobile-name mb-0 ms-4">Vivo T3 x 5G (Violet,128GB)</p>
+            </a>
+
+            <div class="d-flex  ms-4">
+                <div class="mobile-rating-md ">
+                    <p class="rating1-md">4.6</p>
+                    <i class="fa-solid fa-star starr"></i>
+                </div>
+                <p class="ratings-md">34,952 Ratings & 1,967 Reviews</p>
+            </div>
+            <div class="points-mobile-md ">
+                <ul>
+                    <li>6 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
+                    <li>17.02 cm (6.7inch) Super Retina XDR Display</li>
+                    <li>48MP + 12 MP | 12 MP Front Camera</li>
+                    <li>A16 Bionic Chip, 6 Core Processor </li>
+                    <li>1 year warranty for phone and 1 year warranty for in the box accessories</li>
+                </ul>
+                <div>
+                    <p class="mobile-price-md m-0">&#8377;24,999</p>
+                    <p class="mobile-percentage-md m-0"><span class="decoration-md">&#8377;30,900 </span><span class="ddggg">10% off</span></p>
+                    <p class="delivery-md m-0">Free delivery by <span class="free-delivery-md">10th Dec</span></p>
+                    <p class="blue-offer m-0">Save extra with combo offers</p>
+                    <p class="exchange m-0">Upto <span class="price-off">&#8377;10,000</span> Off on Exchange</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <hr class="d-none d-md-block">
+    <div class="col-12 d-md-none">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/apple-iphone-15-green-128-gb/p/itm235cd318bde73?pid=MOBGTAGPYYWZRUJX&lid=LSTMOBGTAGPYYWZRUJX8CTXDU&marketplace=FLIPKART&sattr[]=color&sattr[]=storage&st=color" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733536887/IMG_20241207_072905_gzjlni.jpg" alt="mobile-image" height="150px">
+                <div class="">
+                    <p class="mobile-brand-name m-0">Apple iPhone 15 Plus (Green,128GB)</p>
+            </a>
+
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(35,953)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">18%</span><span class="decoration-price">79,900</span>&#8377;64,999</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;3,600</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile">1 year warranty by vivo</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">6 GB RAM | 128 GB Storage</p>
+    <p class="Specifications-display m-2">17.02 cm(6.72 inch) Super Retina XDR Display| 6000mAh</p>
+    <p class="Specifications-ram m-2">48MP+12MP | 12MP Front Camera</p>
+    </div>
+
+    <div class="col-12 d-md-none">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/apple-iphone-15-pink-128-gb/p/itm7579ed94ca647?pid=MOBGTAGPNMZA5PU5&lid=LSTMOBGTAGPNMZA5PU51YWTGZ&marketplace=FLIPKART&sattr[]=color&sattr[]=storage&st=color" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733536887/IMG_20241207_072846_u2l3py.jpg" alt="mobile-image" height="150px">
+                <div class="">
+                    <p class="mobile-brand-name m-0">Apple iPhone 15 Plus (Pink,128GB)</p>
+            </a>
+
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(31,128)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">18%</span><span class="decoration-price">79,900</span>&#8377;64,999</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;3,600</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile">1 year warranty by vivo</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">6 GB RAM | 128 GB Storage</p>
+    <p class="Specifications-display m-2">17.02 cm(6.72 inch) Super Retina XDR Display| 6000mAh</p>
+    <p class="Specifications-ram m-2">48MP+12MP | 12MP Front Camera</p>
+    </div>
+
+    <div class="col-12 d-md-none">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/apple-iphone-15-black-128-gb/p/itm6ac6485515ae4?pid=MOBGTAGPTB3VS24W&lid=LSTMOBGTAGPTB3VS24WCTBCFM&marketplace=FLIPKART&sattr[]=color&sattr[]=storage&st=color" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733536888/IMG_20241207_072922_k7dxyk.jpg" alt="mobile-image" height="150px">
+                <div class="">
+                    <p class="mobile-brand-name m-0">Apple iPhone 15 Plus (Black,128GB)</p>
+            </a>
+
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(28,120)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">18%</span><span class="decoration-price">79,900</span>&#8377;64,999</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;3,600</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile">1 year warranty by vivo</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">6 GB RAM | 128 GB Storage</p>
+    <p class="Specifications-display m-2">17.02 cm(6.72 inch) Super Retina XDR Display| 6000mAh</p>
+    <p class="Specifications-ram m-2">48MP+12MP | 12MP Front Camera</p>
+    </div>
+
+    <div class="col-12 d-md-none">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/vivo-t3x-5g-sapphire-blue-128-gb/p/itm263ed44f56cd5?pid=MOBH4EAC8GFJXHHP&lid=LSTMOBH4EAC8GFJXHHPMYAKQS&marketplace=FLIPKART&q=vivo+t3+5g&store=tyy%2F4io&srno=s_1_14&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=organic&iid=e5bfa343-a014-40c0-ab67-47eceedb2974.MOBH4EAC8GFJXHHP.SEARCH&ppt=pp&ppn=pp&ssid=p4r2ggaoq80000001733672419133&qH=dcba9c2cffedc3cb" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733536887/IMG_20241207_073047_ygychl.jpg" alt="mobile-image" height="150px">
+                <div class="">
+                    <p class="mobile-brand-name m-0">Vivo T3x 5G (Sapphire Blue,128GB)</p>
+            </a>
+
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(1,05,970)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">23%</span><span class="decoration-price">18,999</span>&#8377;14,499</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;3,600</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile">1 year warranty by vivo</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">4 GB RAM | 128 GB Storage</p>
+    <p class="Specifications-display m-2">17.07 cm(6.72 inch) Full HD+ Display | 6000mAh</p>
+    <p class="Specifications-ram m-2">50MP+2MP | 8MP Front Camera</p>
+    </div>
+
+    <div class="col-12 d-md-none">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/vivo-t3x-5g-crimson-bliss-128-gb/p/itm263ed44f56cd5?pid=MOBGZZCDVNWUZSPJ&lid=LSTMOBGZZCDVNWUZSPJ8CT9F2&marketplace=FLIPKART&q=vivo%20t3%205g&sattr[]=color&sattr[]=ram&st=color" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733536888/IMG_20241207_072832_wyqkvg.jpg" alt="mobile-image" height="150px">
+                <div class="">
+                    <p class="mobile-brand-name m-0">Vivo T3x 5G (Crimson Bliss,128GB)</p>
+            </a>
+
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(1,05,970)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">23%</span><span class="decoration-price">18,999</span>&#8377;14,499</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;3,600</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile">1 year warranty by vivo</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">4 GB RAM | 128 GB Storage</p>
+    <p class="Specifications-display m-2">17.07 cm(6.72 inch) Full HD+ Display | 6000mAh</p>
+    <p class="Specifications-ram m-2">50MP+2MP | 8MP Front Camera</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--medium Devices Only-->
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="mobile-details-flex">
+                <a href="https://www.flipkart.com/dell-inspiron-3520-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-new-15-laptop-thin-light/p/itm108ece6bfe39a?pid=COMGJ75HJGFDJ6JN&lid=LSTCOMGJ75HJGFDJ6JNHHR3RD&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_1_4&otracker=AS_QueryStore_OrganicAutoSuggest_1_2_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_2_na_na_ps&fm=organic&iid=ea330ac8-c02a-43d2-8f55-14e58ce2a788.COMGJ75HJGFDJ6JN.SEARCH&ppt=hp&ppn=homepage&ssid=0wyw71u3ao0000001733672602496&qH=312f91285e048e09" target="_blank">
+                    <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733562441/IMG_20241207_143505_vyzliq.jpg" alt="mobile-image" height="150px">
+                    <div class="">
+                        <p class="mobile-brand-name m-0">DELL Inspiration 3520 Intel Core i3 12th Gen 1215U</p>
+                </a>
+
+                <div class="mobile-image-stars m-0">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star-half-stroke star"></i>
+                    <p class="mobile-reviewrs-count m-0">(15,970)</p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-arrow-down arrow-down"></i>
+                    <p class="mobile-price m-0"><span class="mobile-percentage">25%</span><span class="decoration-price">99,900</span>&#8377;73,499</p>
+                </div>
+                <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+                <p class="exchange m-0">Upto <span class="small-hilight">&#8377;28,000</span> Off on Exchange</p>
+                <div class="d-flex m-0">
+                    <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                    <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+                </div>
+                <p class="warranty-mobile">1 year warranty for Laptop</p>
+            </div>
+        </div>
+        <p class="Specifications-mobile m-2">NA Gfx</p>
+        <p class="Specifications-display m-2">34.54cm (13.6 Inch) Liquid Retina Display</p>
+        <p class="Specifications-ram m-2">1.24 kg | Thin and Light Laptop</p>
+    </div>
+
+    <div class="col-12 col-md-4">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/apple-macbook-air-m2-8-gb-512-gb-ssd-mac-os-monterey-mly03hn-a/p/itm63afd154c22ff?pid=COMGFB2GTM7MMJYN&lid=LSTCOMGFB2GTM7MMJYNIHQHMG&marketplace=FLIPKART&q=laptop&sattr[]=color&sattr[]=ssd_capacity&st=color" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733562432/IMG_20241207_143524_puvqb0.jpg" alt="mobile-image" height="150px">
+                <div class="">
+                    <p class="mobile-brand-name m-0">Apple MacBook AIR Apple M2 - (8 GB/256 GB SSD/Mac Os Monotery)</p>
+            </a>
+
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(1,05,970)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">23%</span><span class="decoration-price">99,900</span>&#8377;74,900</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;3,600</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile">1 year warranty for Laptop</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">NA Gfx</p>
+    <p class="Specifications-display m-2">34.54 cm (13.6 Inch) Liquid Retina Display</p>
+    <p class="Specifications-ram m-2">1.24 Kg | Thin and Light Laptop</p>
+    </div>
+
+
+    <div class="col-12 col-md-4">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/apple-macbook-air-m2-8-gb-256-gb-ssd-mac-os-monterey-mlxw3hn-a/p/itmc2732c112aeb1?pid=COMGFB2GSG8EQXCQ&lid=LSTCOMGFB2GSG8EQXCQJWHH2F&marketplace=FLIPKART&q=laptop&sattr[]=color&sattr[]=ssd_capacity&st=color" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733568545/IMG_20241207_161720_afrfej.jpg" alt="mobile-image" height="150px">
+                <div class="">
+                    <p class="mobile-brand-name m-0">Apple MacBook AIR Apple M2 - (8 GB/256 GB SSD/Mac Os Monotery)</p>
+            </a>
+
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(1,05,970)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">23%</span><span class="decoration-price">99,900</span>&#8377;74,900</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;3,600</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile">1 year warranty by laptop</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">NA Gfx</p>
+    <p class="Specifications-display m-2">34.54 cm (13.6 Inch) Liquid Retina Display</p>
+    <p class="Specifications-ram m-2">1.24 Kg | Thin and Light Laptop</p>
+    </div>
+    <hr class="d-none d-md-block">
+    <!-- CAMERAS -->
+    <div class="col-12 col-md-4">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/canon-eos-1500d-dslr-camera-body-18-55-mm-ii-lens/p/itm033175ceb4ddd?pid=DLLFAEWE22ZAERXG&lid=LSTDLLFAEWE22ZAERXGWRV3XA&marketplace=FLIPKART&q=camera&store=jek%2Fp31&srno=s_1_5&otracker=search&otracker1=search&fm=search-autosuggest&iid=c654110c-54ef-4c64-b5f7-a9f55b149bd7.DLLFAEWE22ZAERXG.SEARCH&ppt=sp&ppn=sp&ssid=gq68wfsdnk0000001733672900872&qH=dd6d2dcc679d12b9" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733582356/IMG_20241207_200733_agt9io.jpg" alt="mobile-image" height="130px">
+                <div class="">
+                    <p class="mobile-brand-name m-0">Canon EOS 1500D DSLR Camera Body+ 18-55 mm </p>
+            </a>
+
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(34,970)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">36%</span><span class="decoration-price">64,995</span>&#8377;40,990</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;3,600</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile">1 year warranty for Camera</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">R100 Mirrorless Camera 4K</p>
+    <p class="Specifications-display m-2">RF-S 18-45mm f/4.5-6.3 IS STM (Black)</p>
+    <p class="Specifications-ram m-2">24.1 MP CMOS</p>
+    </div>
+
+    <div class="col-12 col-md-4">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/canon-r100-mirrorless-camera-rf-s-18-45mm-f-4-5-6-3-stm/p/itm3bc65ea11d81b?pid=DLLGQAQYNT39ZJTG&lid=LSTDLLGQAQYNT39ZJTGWF2CZS&marketplace=FLIPKART&q=camera&store=jek%2Fp31&srno=s_1_1&otracker=search&otracker1=search&fm=search-autosuggest&iid=en_hyVx3Ok5-gGJA3DU3ZdzmPcrmlQbumiQDRW1MmEjbzgaM0GoJL-SQiem73Z1JokdUxpMB-6n76-MyG_zn2BquA%3D%3D&ppt=sp&ppn=sp&ssid=gq68wfsdnk0000001733672900872&qH=dd6d2dcc679d12b9" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733582357/IMG_20241207_200530_ijml50.jpg" alt="mobile-image" height="130px">
+                <div class="">
+                    <p class="mobile-brand-name m-0">Canon R100 Mirrorless Camera RF-S 18-45mm f/4.5-6.3 IS STM</p>
+            </a>
+
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(1,05,970)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">23%</span><span class="decoration-price">47,995</span>&#8377;39,800</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;3,600</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile">1 year warranty for Camera</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">R100 Mirrorless Camera 4K</p>
+    <p class="Specifications-display m-2">RF-S 18-45mm f/4.5-6.3 IS STM (Black)</p>
+    <p class="Specifications-ram m-2">24.1 MP CMOS</p>
+    </div>
+
+    <div class="col-12 col-md-4">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/canon-eos-3000d-dslr-camera-1-body-18-55-mm-lens/p/itm1f4ad2d1ba230?pid=CAMF3DHJURPEMNRN&lid=LSTCAMF3DHJURPEMNRNBKP0RG&marketplace=FLIPKART&q=camera&store=jek%2Fp31&srno=s_1_9&otracker=search&otracker1=search&iid=4696f0a4-54ed-452e-9051-0c3b8f6821c4.CAMF3DHJURPEMNRN.SEARCH&ssid=acfz0suv4w0000001733709685928&qH=dd6d2dcc679d12b9" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733582924/IMG_20241207_201553_ghy1f7.jpg" alt="mobile-image" height="130px">
+                <div class="">
+                    <p class="mobile-brand-name m-0">Canon EOS 3000D DSLR Camera 1 Body,18 - 55 mm Lens</p>
+            </a>
+
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(45,970)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">11%</span><span class="decoration-price">35,995</span>&#8377;31,990</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;3,600</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile">1 year warranty for Camera</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">R100 Mirrorless Camera 4K</p>
+    <p class="Specifications-display m-2">RF-S 18-45mm f/4.5-6.3 IS STM (Black)</p>
+    <p class="Specifications-ram m-2">24.1 MP CMOS</p>
+    </div>
+
+    <hr class="d-none d-md-block">
+    <!--TELEVISIONS-->
+    <div class="col-12 col-md-4">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/motorola-envisionx-165-cm-65-inch-qled-ultra-hd-4k-smart-google-tv-dolby-vision-atmos/p/itm767828569c629?pid=TVSGRTDDGYA4HPWU&lid=LSTTVSGRTDDGYA4HPWUZVEWYT&marketplace=FLIPKART&q=tv&store=ckf%2Fczl&srno=s_1_9&otracker=search&otracker1=search&fm=Search&iid=1025710e-50a6-44fd-ad7c-4e97264dca2b.TVSGRTDDGYA4HPWU.SEARCH&ppt=sp&ppn=sp&ssid=ithuxn8ib40000001733709894500&qH=c9a1fdac6e082dd8" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733570323/IMG_20241207_164640_nxvtll.jpg" alt="mobile-image" height="130px">
+                <div class="">
+                    <p class="mobile-brand-name m-0">MOTOROLA EnvisionX 165 cm (65 inch) QLED Ultra HD (4K)</p>
+            </a>
+
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(85,970)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">23%</span><span class="decoration-price">68,999</span>&#8377;54,499</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;8,990</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile m-0">1 year warranty by Motorola Brand's</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">OS: Google TV</p>
+    <p class="Specifications-display m-2">Ultra HD (4K) 3840 X 2160 Pixels</p>
+    <p class="Specifications-ram m-2">Launch Year: 2023</p>
+    </div>
+
+    <div class="col-12 col-md-4">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/tcl-c69b-139-cm-55-inch-qled-ultra-hd-4k-smart-google-tv-dolby-atmos-35w-onkyo-2-1ch-subwoofer/p/itmdfca96c675d49?pid=TVSGZK4GPFF6GMTS&lid=LSTTVSGZK4GPFF6GMTSWXZFKS&marketplace=FLIPKART&q=tcl+c698tv&store=ckf%2Fczl&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=ce6fb1d1-eedd-473e-8b7e-2d40ac9c1883.TVSGZK4GPFF6GMTS.SEARCH&ppt=sp&ppn=sp&ssid=ynrgxvx2sw0000001733709984014&qH=329c62b496b7a330" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733570322/IMG_20241207_164725_i19pyo.jpg" alt="mobile-image" height="130px">
+                <div class="">
+                    <p class="mobile-brand-name m-0">TCL C69B 139 cm (55 inch) QLED Ultra HD (4k)</p>
+            </a>
+
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(65,653)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">33%</span><span class="decoration-price">73,000</span>&#8377;38,000</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;9,999</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile">1 year warranty by TCL brand's</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">OS: Google TV</p>
+    <p class="Specifications-display m-2">Ultra HD (4K) 3890 x 2160 Pixels</p>
+    <p class="Specifications-ram m-2">Launch Year: 2024</p>
+    </div>
+
+    <div class="col-12 col-md-4">
+        <div class="mobile-details-flex">
+            <a href="https://www.flipkart.com/mi-xiaomi-series-80-cm-32-inch-hd-ready-led-smart-google-tv-2024-200-free-channels-dolby-audio-dts-hd-dts-virtual-x-vivid-picture-engine-dual-band-wi-fi-bluetooth-5-0/p/itmc6af224bca65e?pid=TVSHY9QFREWDZHQP&lid=LSTTVSHY9QFREWDZHQPRTC9YH&marketplace=FLIPKART&q=xiami+tv&store=ckf%2Fczl&spotlightTagId=BestsellerId_ckf%2Fczl&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=0a0397ed-3d62-4277-9c7f-f78be363305e.TVSHY9QFREWDZHQP.SEARCH&ppt=sp&ppn=sp&ssid=nxgk4n3ypc0000001733710044321&qH=ee17dbe1334a0a46" target="_blank">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733570321/IMG_20241207_164544_fqiwo5.jpg" alt="mobile-image" height="130px">
+
+                <div class="">
+                    <p class="mobile-brand-name m-0">Mi by Xiaomi A seires 80 cm (32 inch) Hd Ready LED Smart Tv</p>
+            </a>
+            <div class="mobile-image-stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <p class="mobile-reviewrs-count m-0">(46,624)</p>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-down arrow-down"></i>
+                <p class="mobile-price m-0"><span class="mobile-percentage">26%</span><span class="decoration-price">28,990</span>&#8377;19,999</p>
+            </div>
+            <p class="small-letter mt-1 mb-1">save extra with combo offers</p>
+            <p class="exchange m-0">Upto <span class="small-hilight">&#8377;5,999</span> Off on Exchange</p>
+            <div class="d-flex m-0">
+                <i class="fa-solid fa-truck-fast truck-express-image"></i>
+                <p class="express-mobile m-0"><span class="italic">EXPRESS</span> Delivery tomorrow</p>
+            </div>
+            <p class="warranty-mobile">1 year warranty by Xioami TV's</p>
+        </div>
+    </div>
+    <p class="Specifications-mobile m-2">OS: Google TV</p>
+    <p class="Specifications-display m-2">HD Ready 1366 x 768 Pixels</p>
+    <p class="Specifications-ram m-2">Launch Year: 2024</p>
+    </div>
+
+
+    <div class="video-controls">
+        <a href="https://www.flipkart.com/motorola-edge-50-fusion-marshmallow-blue-128-gb/p/itmf88eea5799a27?pid=MOBGXTYZEZSZQE7W&lid=LSTMOBGXTYZEZSZQE7WIBXLBI&marketplace=FLIPKART&q=motorola&store=tyy%2F4io&srno=s_1_9&otracker=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&fm=Search&iid=cdff46cb-f357-4d5a-aea7-c3aa6bc4bdc6.MOBGXTYZEZSZQE7W.SEARCH&ppt=sp&ppn=sp&ssid=rtsvm1e08w0000001733710102914&qH=750379b5926e9f72" target="_blank">
+            <div class="row">
+                <div class="col-12 col-md-3 m-0">
+                    <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733575293/1733575272999_tlt1ic.png" alt="mobile-image" class="video-image">
+                </div>
+                <div class="col-12 col-md-9 mt-md-4 m-0">
+                    <video src="https://res.cloudinary.com/dhfrl63l6/video/upload/v1733124532/This_festive_say_Hello_Colours__Hello_AI_with_Motorola_Smartphones_on__flipkart._Hoja_Rangeela_re_1080p_xszbcg.mp4" autoplay muted loop class="video-url"></video>
+                </div>
+            </div>
+    </div>
+    </a>
+    </div>
+    </div>
+
+
+
+
+
+    <!-- Product Filter Sidebar -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="filter-sidebar">
+                    <h4>Filter By</h4>
+
+                    <!-- Category Filter -->
+                    <div class="filter-category">
+                        <h5>Categories</h5>
+                        <ul class="list-unstyled">
+                            <li><input type="checkbox" id="electronics" name="category" value="electronics"> Electronics</li>
+                            <li><input type="checkbox" id="fashion" name="category" value="fashion"> Fashion</li>
+                            <li><input type="checkbox" id="home" name="category" value="home"> Home</li>
+                            <li><input type="checkbox" id="books" name="category" value="books"> Books</li>
+                        </ul>
+                    </div>
+
+                    <!-- Price Range Filter -->
+                    <div class="filter-price">
+                        <h5>Price Range</h5>
+                        <label for="price-range">Select Price Range:</label>
+                        <input type="range" class="form-range" id="price-range" min="0" max="1000" step="10" value="500">
+                        <p>Up to $<span id="price-value">500</span></p>
+                    </div>
+
+                    <!-- Rating Filter -->
+                    <div class="filter-rating">
+                        <h5>Rating</h5>
+                        <ul class="list-unstyled">
+                            <li><input type="radio" id="rating-1" name="rating" value="1"> 1 Star</li>
+                            <li><input type="radio" id="rating-2" name="rating" value="2"> 2 Stars</li>
+                            <li><input type="radio" id="rating-3" name="rating" value="3"> 3 Stars</li>
+                            <li><input type="radio" id="rating-4" name="rating" value="4"> 4 Stars</li>
+                            <li><input type="radio" id="rating-5" name="rating" value="5"> 5 Stars</li>
+                        </ul>
+                    </div>
+
+                    <!-- Apply Filter Button -->
+                    <button class="btn btn-primary w-100">Apply Filters</button>
+                </div>
+            </div>
+
+            <!-- Product Grid Section (Placeholder for products) -->
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- Featured Product Cards -->
+                    <div class="col-6 col-md-3 mb-1">
+                        <div class="main-card-bookd">
+                            <div class="card-books m-0">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733228259/IMG_20241203_174544_uk5xqb.jpg" class="book-image pb-2" alt="Product 1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">The Sophies World</p>
+                                <p class="m-0 author">Jostein Gardene</p>
+                                <div class="main-book">
+                                    <div class="book-rating">
+                                        <p>4.4</p>
+                                        <i class="fa-solid fa-star starsbook"></i>
+                                    </div>
+                                    <p class="rating-persons m-0">(27,568)</p>
+                                </div>
+                                <div class="m-0 price-books">
+                                    <p class="main-price m-0">&#8377;349</p>
+                                    <p class="duplicate-price m-0">&#8377;360</p>
+                                    <p class="percent-off m-0">50% off</p>
+                                </div>
+                                <p class="free-delivery m-0">Free Delivery</p>
+                                <p class="hot-deal">Hot Deal</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-6 col-md-3 mb-1">
+                        <div class="main-card-bookd">
+                            <div class="card-books m-0">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733228259/IMG_20241203_174421_r2sadg.jpg" class="book-image pb-2" alt="Product 1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">The Rtu Vidya</p>
+                                <p class="m-0 author">Sinu Joseph</p>
+                                <div class="main-book">
+                                    <div class="book-rating">
+                                        <p>4.4</p>
+                                        <i class="fa-solid fa-star starsbook"></i>
+                                    </div>
+                                    <p class="rating-persons m-0">(27,568)</p>
+                                </div>
+                                <div class="m-0 price-books">
+                                    <p class="main-price m-0">&#8377;349</p>
+                                    <p class="duplicate-price m-0">&#8377;360</p>
+                                    <p class="percent-off m-0">50% off</p>
+                                </div>
+                                <p class="free-delivery m-0">Free Delivery</p>
+                                <p class="hot-deal">Hot Deal</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-6 col-md-3 mb-1">
+                        <div class="main-card-bookd">
+                            <div class="card-books m-0">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733228260/IMG_20241203_174434_tm6vzc.jpg" class="book-image pb-2" alt="Product 1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">Time is the Real God</p>
+                                <p class="m-0 author">Deepak Gupta</p>
+                                <div class="main-book">
+                                    <div class="book-rating">
+                                        <p>4.6</p>
+                                        <i class="fa-solid fa-star starsbook"></i>
+                                    </div>
+                                    <p class="rating-persons m-0">(27,568)</p>
+                                </div>
+                                <div class="m-0 price-books">
+                                    <p class="main-price m-0">&#8377;349</p>
+                                    <p class="duplicate-price m-0">&#8377;360</p>
+                                    <p class="percent-off m-0">50% off</p>
+                                </div>
+                                <p class="free-delivery m-0">Free Delivery</p>
+                                <p class="only-few">Only few left</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-6 col-md-3 mb-1">
+                        <div class="main-card-bookd">
+                            <div class="card-books m-0">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733228260/IMG_20241203_174313_oa8snl.jpg" class="book-image pb-2" alt="Product 1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">The Inheritance Games</p>
+                                <p class="m-0 author">Jennifer lynn barness</p>
+                                <div class="main-book">
+                                    <div class="book-rating">
+                                        <p>4.3</p>
+                                        <i class="fa-solid fa-star starsbook"></i>
+                                    </div>
+                                    <p class="rating-persons m-0">(31,419)</p>
+                                </div>
+                                <div class="m-0 price-books">
+                                    <p class="main-price m-0">&#8377;549</p>
+                                    <p class="duplicate-price m-0">&#8377;660</p>
+                                    <p class="percent-off m-0">10% off</p>
+                                </div>
+                                <p class="free-delivery m-0">Free Delivery</p>
+                                <p class="only-few">Only few left</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-6 col-md-3 mb-1">
+                        <div class="main-card-bookd">
+                            <div class="card-books m-0">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733228259/IMG_20241203_174354_swodpj.jpg" class="book-image pb-2" alt="Product 1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">Meditation & Its Methods</p>
+                                <p class="m-0 author">Swami Vivekananda</p>
+                                <div class="main-book">
+                                    <div class="book-rating">
+                                        <p>4.1</p>
+                                        <i class="fa-solid fa-star starsbook"></i>
+                                    </div>
+                                    <p class="rating-persons m-0">(17,432)</p>
+                                </div>
+                                <div class="m-0 price-books">
+                                    <p class="main-price m-0">&#8377;249</p>
+                                    <p class="duplicate-price m-0">&#8377;560</p>
+                                    <p class="percent-off m-0">60% off</p>
+                                </div>
+                                <p class="free-delivery m-0">Free Delivery</p>
+                                <p class="hot-deal">Lowest price since launch</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-6 col-md-3 mb-1">
+                        <div class="main-card-bookd">
+                            <div class="card-books m-0">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733228259/IMG_20241203_174332_fpclvp.jpg" class="book-image pb-2" alt="Product 1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">Law of Attraction</p>
+                                <p class="m-0 author">Elena G.Rivers</p>
+                                <div class="main-book">
+                                    <div class="book-rating">
+                                        <p>4.3</p>
+                                        <i class="fa-solid fa-star starsbook"></i>
+                                    </div>
+                                    <p class="rating-persons m-0">(23,986)</p>
+                                </div>
+                                <div class="m-0 price-books">
+                                    <p class="main-price m-0">&#8377;529</p>
+                                    <p class="duplicate-price m-0">&#8377;660</p>
+                                    <p class="percent-off m-0">30% off</p>
+                                </div>
+                                <p class="free-delivery m-0">Free Delivery</p>
+                                <p class="only-few">Only few left</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-md-3 mb-1">
+                        <div class="main-card-bookd">
+                            <div class="card-books m-0">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733228259/IMG_20241203_174544_uk5xqb.jpg" class="book-image pb-2" alt="Product 1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">The Sophies World</p>
+                                <p class="m-0 author">Jostein Gardene</p>
+                                <div class="main-book">
+                                    <div class="book-rating">
+                                        <p>4.4</p>
+                                        <i class="fa-solid fa-star starsbook"></i>
+                                    </div>
+                                    <p class="rating-persons m-0">(32,231)</p>
+                                </div>
+                                <div class="m-0 price-books">
+                                    <p class="main-price m-0">&#8377;249</p>
+                                    <p class="duplicate-price m-0">&#8377;460</p>
+                                    <p class="percent-off m-0">20% off</p>
+                                </div>
+                                <p class="free-delivery m-0">Free Delivery</p>
+                                <p class="hot-deal">Hot Deal</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-md-3 mb-1">
+                        <div class="main-card-bookd">
+                            <div class="card-books m-0">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733228259/IMG_20241203_174458_lcpl0x.jpg" class="book-image pb-2" alt="Product 1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">Positive Thinking</p>
+                                <p class="m-0 author">Philip Andrew</p>
+                                <div class="main-book">
+                                    <div class="book-rating">
+                                        <p>4.0</p>
+                                        <i class="fa-solid fa-star starsbook"></i>
+                                    </div>
+                                    <p class="rating-persons m-0">(23,568)</p>
+                                </div>
+                                <div class="m-0 price-books">
+                                    <p class="main-price m-0">&#8377;249</p>
+                                    <p class="duplicate-price m-0">&#8377;500</p>
+                                    <p class="percent-off m-0">50% off</p>
+                                </div>
+                                <p class="free-delivery m-0">Free Delivery</p>
+                                <p class="hot-deal">Hot Deal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured products or list of products will go here -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Product Detail Page -->
+
+    <div class="container jjiikkoo my-5">
+        <div class="row">
+            <!-- Product Image Section -->
+            <div class="col-md-4">
+                <div class="product-image mb-2">
+                    <a href="https://www.flipkart.com/samsung-galaxy-z-fold6-5g-navy-512-gb/p/itm4cad29eca0a90?pid=MOBH2HG9KEFWRYJQ&lid=LSTMOBH2HG9KEFWRYJQZEICPZ&marketplace=FLIPKART&q=samsung+z+fold+6&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&fm=Search&iid=74e01655-98eb-47b1-8b70-1fce836a4e0f.MOBH2HG9KEFWRYJQ.SEARCH&ppt=pp&ppn=pp&ssid=ot5twrzv0g0000001733717322739&qH=de34ef687d3bf1b9" target="_blank">
+
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733584519/1733584328492_rjbpx1.png" class="image-fluid" alt="Product Image">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product Information Section -->
+            <div class="col-md-8">
+                <div class="product-info">
+                    <a href="https://www.flipkart.com/samsung-galaxy-z-fold6-5g-navy-512-gb/p/itm4cad29eca0a90?pid=MOBH2HG9KEFWRYJQ&lid=LSTMOBH2HG9KEFWRYJQZEICPZ&marketplace=FLIPKART&q=samsung+z+fold+6&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&fm=Search&iid=74e01655-98eb-47b1-8b70-1fce836a4e0f.MOBH2HG9KEFWRYJQ.SEARCH&ppt=pp&ppn=pp&ssid=ot5twrzv0g0000001733717322739&qH=de34ef687d3bf1b9" target="_blank">
+
+                        <h2 class="product-title m-1">SAMSUNG Galaxy Z Fold 6 5G (Silver shadow, 512 GB)</h2>
+                    </a>
+                    <div class="mobile-rating-flex">
+                        <div class="mobile-ratin">
+                            <p class="product-price">4.4</p>
+                            <i class="fa-solid fa-star mobilestar"></i>
+                        </div>
+                        <p class="reviewrs">23,060 Ratings & 1,173 Reviews</p>
+                    </div>
+                    <!-- Product Rate -->
+                    <p class="mobile-rate">&#8377;1,21,999 <span class="strike-mobile-rate">&#8377;1,32,499</span><span class="offprice">21% off</span></p>
+
+
+                    <!-- Product Description -->
+                    <h4 id="product-descr">Available offers</h4>
+                    <div class="offers-bank">
+                        <i class="fa-solid fa-tag offer-image"></i>
+                        <p>Bank Offer 5% Unlimited Cashback on Flipcart Axis Bank Credit Cards <span class="tandc">T&C</span></p>
+                    </div>
+                    <div class="offers-bank">
+                        <i class="fa-solid fa-tag offer-image"></i>
+                        <p>Bank Offer &#8377;1250 Off on All Banks Credit and Debit Card Transactions. <span class="tandc">T&C</span></p>
+                    </div>
+                    <div class="offers-bank">
+                        <i class="fa-solid fa-tag offer-image"></i>
+                        <p>Freebie Flat 15% off on hotels up to 3999 <span class="tandc">T&C</span></p>
+                    </div>
+                    <div class="offers-bank">
+                        <i class="fa-regular fa-calendar-check offer-image"></i>
+                        <p>No cost EMI &#8377;5,333/month.Standard EMI also available. <span class="tandc">T&C</span></p>
+                    </div>
+                    <div class="offers-bank">
+                        <i class="fa-solid fa-tag offer-image"></i>
+                        <p>Extra 100/- Off on Nothing Cable <span class="tandc">T&C</span></p>
+                    </div>
+
+                    <!-- Product Specifications -->
+                    <h4 class="highlights-name">Highlights</h4>
+                    <div>
+                        <div class="higlights m-0 mb-3">
+                            <i class="fa-solid fa-microchip processor-icon"></i>
+                            <div class="processors">
+                                <p class="processor-name m-0">Processor</p>
+                                <p class="processor-doing m-0">Snapdragon 8 Gen 3 | Octa Core | 3.39 GHz</p>
+                                <p class="processor-works m-0">Superfast Multitasking.Extensive Gaming</p>
+                            </div>
+                        </div>
+
+                        <div class="higlights m-0 mb-3">
+                            <i class="fa-solid fa-camera processor-icon"></i>
+                            <div class="processors">
+                                <p class="processor-name m-0">Rear Camera</p>
+                                <p class="processor-doing m-0">50MP + 12MP +10MP</p>
+                                <p class="processor-works m-0">DSLR Like Pictures & Great Zoom</p>
+                            </div>
+                        </div>
+
+                        <div class="higlights m-0 mb-3">
+                            <i class="fa-solid fa-camera-rotate processor-icons"></i>
+                            <div class="processors">
+                                <p class="processor-names m-0">Front Camera</p>
+                                <p class="processor-doings m-0">10MP</p>
+                                <p class="processor-workss m-0">Attractive Selfies with Clear & Sharp Colours</p>
+                            </div>
+                        </div>
+
+                        <div class="higlights m-0 mb-3">
+                            <i class="fa-solid fa-mobile processor-icon"></i>
+                            <div class="processors ms-2">
+                                <p class="processor-name m-0">Display</p>
+                                <p class="processor-doing m-0"> 7.6 inch Dynamic AMOLED 2X</p>
+                                <p class="processor-works m-0">Immersive Display.Enhaned Viewing Experience</p>
+                            </div>
+                        </div>
+
+                        <div class="higlights m-0 mb-3">
+                            <i class="fa-solid fa-battery-full processor-icon"></i>
+                            <div class="processors">
+                                <p class="processor-name m-0">Battery</p>
+                                <p class="processor-doing m-0">4400 mAh</p>
+                                <p class="processor-works m-0">Charging that can last upto 2 days*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-md-none m-0">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733625669/IMG_20241208_080209_kfion2.jpg" alt="" class="galaxy-ai">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733625472/IMG_20241208_080221_riojvq.jpg" alt="" class="galaxy-voice">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733640177/IMG_20241208_121159_gjhifd.jpg" alt="" class="galaxy-voices">
+                    </div>
+
+                </div>
+
+            </div>
+            <h3 class="rating-name mt-5">Ratings & Reviews</h3>
+            <div class="ratings-container-main">
+                <!-- Left Section -->
+                <div class="left-section">
+                    <i class="fa-solid fa-star starsasd"></i>
+                    <i class="fa-solid fa-star starsasd"></i>
+                    <i class="fa-solid fa-star starsasd"></i>
+                    <i class="fa-solid fa-star starsasd"></i>
+                    <i class="fa-solid fa-star-half-stroke starsasd"></i>
+                    <p><strong>Very Good</strong></p>
+                    <p>71 ratings and 5 reviews</p>
+                </div>
+
+                <!-- Vertical Line -->
+                <div class="vertical-line"></div>
+
+                <!-- Right Section -->
+                <div class="right-section">
+                    <div class="ratings-bar">
+                        <span>5 ★</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 70%;"></div>
+                        </div>
+                        <span class="rating-text">48</span>
+                    </div>
+                    <div class="ratings-bar">
+                        <span>4 ★</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 15%;"></div>
+                        </div>
+                        <span class="rating-text">9</span>
+                    </div>
+                    <div class="ratings-bar">
+                        <span>3 ★</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 5%;"></div>
+                        </div>
+                        <span class="rating-text">3</span>
+                    </div>
+                    <div class="ratings-bar">
+                        <span>2 ★</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 2%;"></div>
+                        </div>
+                        <span class="rating-text">1</span>
+                    </div>
+                    <div class="ratings-bar">
+                        <span>1 ★</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 10%;"></div>
+                        </div>
+                        <span class="rating-text">10</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="reviews-main mt-5">
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star-half-stroke reviews-mobile"></i>
+                    <p class="rating-mobile m-0">4.4 </p>
+                    <p class="rating-much m-0">Very Good</p>
+                </div>
+                <p class="review-content">Review for: Color Silver Shadow . Storage 512 GB</p>
+                <p class="very-nice">Very nice Camera Quality is good</p>
+                <p class="name-reiwer m-0">kamal hasan, Lucknow</p>
+                <div class="helpful-main ">
+                    <div class="helpful-content">
+                        <i class="fa-solid fa-thumbs-up thums-up"></i>
+                        <p class="review-like">Helpful for 465</p>
+                    </div>
+                    <div class="dislike ">
+                        <i class="fa-solid fa-thumbs-down thums-down"></i>
+                        <p class="">212</p>
+                    </div>
+                </div>
+                <div class="verify-bage">
+                    <i class="fa-solid fa-circle-check check"></i>
+                    <p class="verify">Verified Purchase</p>
+                    <p class="when">4 months ago</p>
+                </div>
+
+                <hr>
+                <div class="reviews-main mt-5">
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <p class="rating-mobile m-0">5.0 </p>
+                    <p class="rating-much m-0">Awesome Mobile</p>
+                </div>
+                <p class="review-content">Review for: Color Silver Shadow . Storage 512 GB</p>
+                <p class="very-nice">Really Loved One and my Fav is Samsung I love this Foldable Camera is good and battery too.</p>
+                <p class="name-reiwer m-0">jumanji, patna</p>
+                <div class="helpful-main ">
+                    <div class="helpful-content">
+                        <i class="fa-solid fa-thumbs-up thums-up"></i>
+                        <p class="review-like">Helpful for 632</p>
+                    </div>
+                    <div class="dislike ">
+                        <i class="fa-solid fa-thumbs-down thums-down"></i>
+                        <p class="">102</p>
+                    </div>
+                </div>
+                <div class="verify-bage">
+                    <i class="fa-solid fa-circle-check check"></i>
+                    <p class="verify">Verified Purchase</p>
+                    <p class="when">4 months ago</p>
+                </div>
+
+                <hr>
+
+                <div class="reviews-main mt-5">
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star-half-stroke reviews-mobile"></i>
+                    <p class="rating-mobile m-0">4.0 </p>
+                    <p class="rating-much m-0">Great Product</p>
+                </div>
+                <p class="review-content">Review for: Color Silver Shadow . Storage 512 GB</p>
+                <p class="very-nice">Amazing Product with amazing Feautures.just loved it. The high range Samsung phones are Unbeatable</p>
+                <p class="name-reiwer m-0">vijay thalapathy, kerala</p>
+                <div class="helpful-main ">
+                    <div class="helpful-content">
+                        <i class="fa-solid fa-thumbs-up thums-up"></i>
+                        <p class="review-like">Helpful for 895</p>
+                    </div>
+                    <div class="dislike ">
+                        <i class="fa-solid fa-thumbs-down thums-down"></i>
+                        <p class="">62</p>
+                    </div>
+                </div>
+                <div class="verify-bage">
+                    <i class="fa-solid fa-circle-check check"></i>
+                    <p class="verify">Verified Purchase</p>
+                    <p class="when">5 months ago</p>
+                </div>
+
+
+                <hr>
+
+                <div class="reviews-main mt-5">
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star-half-stroke reviews-mobile"></i>
+                    <p class="rating-mobile m-0">4.3 </p>
+                    <p class="rating-much m-0">Super product</p>
+                </div>
+                <p class="review-content">Review for: Color Silver Shadow . Storage 512 GB</p>
+                <p class="very-nice">Great foldable with great design</p>
+                <p class="name-reiwer m-0">brahmeswar, karnataka</p>
+                <div class="helpful-main ">
+                    <div class="helpful-content">
+                        <i class="fa-solid fa-thumbs-up thums-up"></i>
+                        <p class="review-like">Helpful for 354</p>
+                    </div>
+                    <div class="dislike ">
+                        <i class="fa-solid fa-thumbs-down thums-down"></i>
+                        <p class="">82</p>
+                    </div>
+                </div>
+                <div class="verify-bage">
+                    <i class="fa-solid fa-circle-check check"></i>
+                    <p class="verify">Verified Purchase</p>
+                    <p class="when">6 months ago</p>
+                </div>
+
+
+                <hr>
+
+                <div class="reviews-main mt-5">
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star reviews-mobile"></i>
+                    <i class="fa-solid fa-star-half-stroke reviews-mobile"></i>
+                    <p class="rating-mobile m-0">4.0 </p>
+                    <p class="rating-much m-0">Brilliant</p>
+                </div>
+                <p class="review-content">Review for: Color Silver Shadow . Storage 512 GB</p>
+                <p class="very-nice">Best phone under good camera quality and battery</p>
+                <p class="name-reiwer m-0">kamal hasan, Lucknow</p>
+                <div class="helpful-main ">
+                    <div class="helpful-content">
+                        <i class="fa-solid fa-thumbs-up thums-up"></i>
+                        <p class="review-like">Helpful for 465</p>
+                    </div>
+                    <div class="dislike ">
+                        <i class="fa-solid fa-thumbs-down thums-down"></i>
+                        <p class="">212</p>
+                    </div>
+                </div>
+                <div class="verify-bage">
+                    <i class="fa-solid fa-circle-check check"></i>
+                    <p class="verify">Verified Purchase</p>
+                    <p class="when">4 months ago</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="best-sellers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Best Sellers</h2>
+                    </div>
+                    <div class="container best-sellers-container">
+                        <div class="row">
+                            <div class="col-12 col-md-2">
+                                <!-- Product 1 -->
+                                <div class="product-card">
+                                    <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733133220/IMG_20241202_134546_bpfm0h.jpg" alt="Product 1" id="height-matter">
+                                    <h3 class="bag-name">NEYER</h3>
+                                    <p class="bag-description">Medium 25L Backpack</p>
+                                    <div class="price-content-bag">
+                                        <i class="fa-solid fa-arrow-down arrow-downs"></i>
+                                        <p class="arrow-percentage m-0 p-0">77%</p>
+                                        <p class="bag-property"><span class="strike">1200 </span>&#8377;899</p>
+                                    </div>
+                                    <p class="hot-deal m-0">Hot Deal</p>
+                                    <div class="stars-bag">
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star-half-stroke fa-xs"></i>
+                                        <i class="fa-regular fa-star fa-xs"></i>
+                                    </div>
+                                    <div class="truck-express-main mb-0">
+                                        <i class="fa-solid fa-truck-fast truck-solid"></i>
+                                        <p><span class="express-namess">EXPRESS </span> 2 day delivery</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 2 -->
+                            <div class="col-12 col-md-2">
+                                <div class="product-card">
+                                    <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733133215/IMG_20241202_134601_qqhtpw.jpg" alt="Product 1" id="height-matter">
+                                    <h3 class="bag-name">GEARBG</h3>
+                                    <p class="bag-description">Medium 25L Backpack</p>
+                                    <div class="price-content-bag">
+                                        <i class="fa-solid fa-arrow-down arrow-downs"></i>
+                                        <p class="arrow-percentage m-0 p-0">58%</p>
+                                        <p class="bag-property"><span class="strike">1000 </span>&#8377;599</p>
+                                    </div>
+                                    <p class="hot-deal m-0">Hot Deal</p>
+                                    <div class="stars-bag">
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star-half-stroke fa-xs"></i>
+                                        <i class="fa-regular fa-star fa-xs"></i>
+                                    </div>
+                                    <div class="truck-express-main mb-0">
+                                        <i class="fa-solid fa-truck-fast truck-solid"></i>
+                                        <p><span class="express-namess">EXPRESS </span> 3 day delivery</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 3 -->
+                            <div class="col-12 col-md-2">
+                                <div class="product-card">
+                                    <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733133220/IMG_20241202_134421_ijk40q.jpg" alt="Product 1" id="height-matter">
+                                    <h3 class="bag-name">HOTSPOT</h3>
+                                    <p class="bag-description">Medium 25L Backpack</p>
+                                    <div class="price-content-bag">
+                                        <i class="fa-solid fa-arrow-down arrow-downs"></i>
+                                        <p class="arrow-percentage m-0 p-0">63%</p>
+                                        <p class="bag-property"><span class="strike">1500 </span>&#8377;699</p>
+                                    </div>
+                                    <p class="fewleft m-0">Only few left</p>
+                                    <div class="stars-bag">
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star-half-stroke fa-xs"></i>
+                                        <i class="fa-regular fa-star fa-xs"></i>
+                                    </div>
+                                    <div class="truck-express-main mb-0">
+                                        <i class="fa-solid fa-truck-fast truck-solid"></i>
+                                        <p><span class="express-namess">EXPRESS </span> 1 day delivery</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 4 -->
+                            <div class="col-12 col-md-2">
+                                <div class="product-card">
+                                    <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733133215/IMG_20241202_134525_bqxwv0.jpg" alt="Product 1" id="height-matter">
+                                    <h3 class="bag-name">SKYBAGS</h3>
+                                    <p class="bag-description">Medium 25L Backpack</p>
+                                    <div class="price-content-bag">
+                                        <i class="fa-solid fa-arrow-down arrow-downs"></i>
+                                        <p class="arrow-percentage m-0 p-0">27%</p>
+                                        <p class="bag-property"><span class="strike">999 </span>&#8377;799</p>
+                                    </div>
+                                    <p class="fewleft m-0">Only few left</p>
+                                    <div class="stars-bag">
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star-half-stroke fa-xs"></i>
+                                        <i class="fa-regular fa-star fa-xs"></i>
+                                    </div>
+                                    <div class="truck-express-main mb-0">
+                                        <i class="fa-solid fa-truck-fast truck-solid"></i>
+                                        <p><span class="express-namess">EXPRESS </span> 2 day delivery</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-2 d-none d-md-block">
+                                <div class="product-card">
+                                    <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733404934/IMG_20241205_184958_eabmay.jpg" alt="Product 1" id="height-matter">
+                                    <h3 class="bag-name">SAFARI</h3>
+                                    <p class="bag-description">Medium 25L Backpack</p>
+                                    <div class="price-content-bag">
+                                        <i class="fa-solid fa-arrow-down arrow-downs"></i>
+                                        <p class="arrow-percentage m-0 p-0">32%</p>
+                                        <p class="bag-property"><span class="strike">899 </span>&#8377;499</p>
+                                    </div>
+                                    <p class="hot-deal m-0">Hot Deal</p>
+                                    <div class="stars-bag">
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star-half-stroke fa-xs"></i>
+                                        <i class="fa-regular fa-star fa-xs"></i>
+                                    </div>
+                                    <div class="truck-express-main mb-0">
+                                        <i class="fa-solid fa-truck-fast truck-solid"></i>
+                                        <p><span class="express-namess">EXPRESS </span> 2 day delivery</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-2 d-none d-md-block">
+                                <div class="product-card">
+                                    <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733404934/IMG_20241205_184830_fj6s4o.jpg" alt="Product 1" id="height-matter">
+                                    <h3 class="bag-name">SAFARI</h3>
+                                    <p class="bag-description">Medium 25L Backpack</p>
+                                    <div class="price-content-bag">
+                                        <i class="fa-solid fa-arrow-down arrow-downs"></i>
+                                        <p class="arrow-percentage m-0 p-0">47%</p>
+                                        <p class="bag-property"><span class="strike">799 </span>&#8377;399</p>
+                                    </div>
+                                    <p class="fewleft m-0">Only few left</p>
+                                    <div class="stars-bag">
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star fa-xs"></i>
+                                        <i class="fa-solid fa-star-half-stroke fa-xs"></i>
+                                        <i class="fa-regular fa-star fa-xs"></i>
+                                    </div>
+                                    <div class="truck-express-main mb-0">
+                                        <i class="fa-solid fa-truck-fast truck-solid"></i>
+                                        <p><span class="express-namess">EXPRESS </span> 2 day delivery</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <div class="footer-top">
+                <div class="container footer-columns">
+                    <!-- Customer Service Links -->
+                    <div class="footer-column">
+                        <h4>Customer Service</h4>
+                        <ul>
+                            <li><a href="#">Help & FAQs</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Order Tracking</a></li>
+                            <li><a href="#">Shipping Info</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company Info Links -->
+                    <div class="footer-column">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Corporate Info</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="footer-column">
+                        <h4>Follow Us</h4>
+                        <ul class="social-icons">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="footer-column">
+                        <h4>Subscribe to Our Newsletter</h4>
+                        <form>
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2024 Amazon Clone. All rights reserved.</p>
+                    <p>
+                        <a href="#">Terms of Use</a> |
+                        <a href="#">Privacy Policy</a> |
+                        <a href="#">Cookies</a>
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="mobile.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

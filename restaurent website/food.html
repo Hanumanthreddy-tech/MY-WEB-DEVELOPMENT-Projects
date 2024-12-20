@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32ffb05717.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732949346/restaurent_logo_d1hm2t.webp">
+    <link rel="stylesheet" href="restaurent.css">
+    <title>Aldenaire Restaurent</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary " id="main-container ">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631085/IMG_20241126_194934_tyum2b.png" alt="Aldenaire Logo" id="aldenaire-image-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto " id="nav-icons">
+                    <a class="nav-link " aria-current="page" href="#carouselExampleFade">Home</a>
+                    <a class="nav-link" href="#Why-choose-us">Choose Us</a>
+                    <a class="nav-link" href="#product-section">Products</a>
+                    <a class="nav-link" href="#about-us">About us</a>
+                    <a class="nav-link" href="#contact-us">Contact us</a>
+                    <div class="clickme">
+                        <label for="toggleLogin" class="nav-link">Login</label>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+    <input type="checkbox" id="toggleLogin" style="display: none;">
+    <div class="overlay"></div>
+
+    <div class="main-login-form gigigi ml-1 ml-md-0" id="displayloginform">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 d-none d-md-block">
+                    <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732881442/1732880258269_ormetl.png" alt="" class="logo-login">
+                </div>
+                <div class="col-12 col-md-6 mt-4">
+                    <form>
+                        <div class="names-login-page">
+                            <h1 class="login-heading">Aldenaire Restaurent</h1>
+                            <input id="Username" type="text" placeholder="Username " required>
+
+                            <input id="Password" type="password" placeholder="Password" required>
+
+                            <input type="email" name="" id="email" placeholder="email or phone number">
+
+                            <button class="btn-login">Login</button>
+                            <div class="divider">
+                                <span class="divider-text">OR</span>
+                            </div>
+                            <div class="google-logo bg-secondary">
+                                <i class="fa-brands fa-google" id="google"></i>
+                                <a href="https://accounts.google.com/v3/signin/identifier?ifkv=AcMMx-fdJQX-xCuyyAJ1ghppd_tP5TZDWZdTjhdDjlz7tavbEEMkyveIloopXO3wwiwewalnpxqAag&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S907859610%3A1732888872418130&ddm=1" target="_blank" class="underline">
+                                    <p class="ggole-name ">Log in with Google</p>
+                                </a>
+                            </div>
+                            <a href="#" class="forgot-psd">Forgot password?</a>
+                        </div>
+                        <p class="account">Dont have an account?<span class="sign-up">Sign Up</span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <label for="toggleLogin" class="back-button ml-md-5">Back</label>
+    </div>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade ">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732688830/lights_none_e7sjlw.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5 class="restaurent-name">Aldenaire Restaurent</h5>
+                    <p>We are providing the waiting halls for people who left behind</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732682220/backgroud-image-restauren_pzpjnv.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5 class="restaurent-name">Aldenaire Dining</h5>
+                    <p>We have the one of the comfortable and richiest dining halls.</p>
+                </div>
+
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732682082/restaurent_home_page_gs0yrm.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5 class="restaurent-name">Aldenaire Bar</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+
+    <div class="choose-us-container " id="Why-choose-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="wcu-main-heading">Why Choose Us?</h1>
+                    <p class="wcu-main-para">We are providing food service,amazing food,Quality food,Dinging areas,menu-items,Delivery service,Awesome Service and many more...</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="wcu-card-section p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631086/1732630478527_isz1dm.png" alt="" class="image-content-wcu">
+                        <h1 class="wcu-heading">Food Service</h1>
+                        <p class="wcu-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, pariatur dolorum neque iste deleniti harum in fuga sunt illum, vero numquam quia. Reiciendis necessitatibus magnam odit ducimus asperiores distinctio voluptatem autem beatae id!</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="wcu-card-section p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631085/1732630303172_n3t9ft.png" alt="" class="image-content-wcu">
+                        <h1 class="wcu-heading">Amazing Food</h1>
+                        <p class="wcu-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus id est iusto recusandae alias. Adipisci consectetur necessitatibus consequuntur voluptatum, nesciunt labore id asperiores distinctio voluptatem aliquid vero? Recusandae.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="wcu-card-section p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631086/1732630353803_eascul.png" alt="" class="image-content-wcu">
+                        <h1 class="wcu-heading">Quality Food</h1>
+                        <p class="wcu-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, beatae cumque eveniet error tempore, facere aperiam architecto, tenetur eius debitis sapiente nihil quas. Minus ducimus consectetur quas perspiciatis inventore possimus.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="wcu-card-section p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631086/1732630448420_gdbhyv.png" alt="" class="image-content-wcu">
+                        <h1 class="wcu-heading">Dining</h1>
+                        <p class="wcu-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi suscipit consequuntur ipsa sint distinctio. In amet dicta delectus facilis minus placeat totam. Adipisci deserunt eos reiciendis. Quas quasi molestias nulla.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="wcu-card-section p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631086/1732630430127_ctfpux.png" alt="" class="image-content-wcu">
+                        <h1 class="wcu-heading">Menu</h1>
+                        <p class="wcu-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque ipsam voluptatibus impedit, omnis quis quam dicta, nisi esse in fugit et fugiat illo nostrum, nam temporibus facilis voluptate! Impedit.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="wcu-card-section p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631086/1732630373093_q68vow.png" alt="" class="image-content-wcu">
+                        <h1 class="wcu-heading">Delivery</h1>
+                        <p class="wcu-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas rerum id maxime sed aperiam cupiditate. Blanditiis itaque nihil officia voluptatibus magnam perspiciatis in, , recusandae beatae?</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="wcu-card-section p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631085/1732630543348_t5j6vg.png" alt="" class="image-content-wcu">
+                        <h1 class="wcu-heading">Awesome Service</h1>
+                        <p class="wcu-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, quo? Sequi magni, sunt quaerat culpa voluptas sed perspiciatis minus libero ipsam? Nobis laboriosam consequuntur saepe?</p>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="wcu-card-section p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631085/1732630888333_ppj4l2.png" alt="" class="image-content-wcu">
+                        <h1 class="wcu-heading">Premium Quality</h1>
+                        <p class="wcu-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur accusamus cum necessitatibus fugit voluptatum optio sequi laboriosam cumque hic, nesciunt et, nulla soluta, iste nemo temporibus enim aut a.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="wcu-card-section p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631086/1732630506193_ce0rh8.png" alt="" class="image-content-wcu">
+                        <h1 class="wcu-heading">Amazing Cheff</h1>
+                        <p class="wcu-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur accusamus cum necessitatibus fugit voluptatum optio sequi laboriosam cumque hic, nesciunt et, nulla soluta, iste nemo temporibus enim aut a.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-items " id="product-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="oi-main-heading">Our Items</h1>
+                    <p class="oi-main-para">We are Serving the Variety of Fastoods,Sea Foods,Veg Items,Non-veg Items and Bars and Many more...</p>
+                </div>
+
+                <div class="col-12">
+                    <h1 class="breakfast-heading">Breakfasts</h1>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631152/IMG_20241126_190113_sck1tq.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">IDLI</h1>
+                            <h2 class="food-item-rating">4.0
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.23</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631154/IMG_20241126_190128_omsyy9.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">PURI</h1>
+                            <h2 class="food-item-rating">4.2
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.35</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631138/IMG_20241126_191944_lwnutw.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">CHAPATHI</h1>
+                            <h2 class="food-item-rating">4.5
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.23</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631101/IMG_20241126_192908_zlwyea.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">PONGANALU</h1>
+                            <h2 class="food-item-rating">4.5
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.69</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631145/IMG_20241126_190411_samjmt.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">PANIYARAM</h1>
+                            <h2 class="food-item-rating">4.1
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.29</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631103/IMG_20241126_192935_otkomm.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">CINNAMONN</h1>
+                            <h2 class="food-item-rating">4.0
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.34</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631106/IMG_20241126_192719_hobq7z.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">WAFFLESD</h1>
+                            <h2 class="food-item-rating">4.6
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.47</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631098/IMG_20241126_193043_b6zpju.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">VADA</h1>
+                            <h2 class="food-item-rating">4.1
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.13</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631156/IMG_20241126_190000_cnshwj.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">BURCHETTA</h1>
+                            <h2 class="food-item-rating">4.3
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.43</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631088/IMG_20241126_193724_hjk8wh.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">ROTI</h1>
+                            <h2 class="food-item-rating">4.0
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.18</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631093/IMG_20241126_193331_du0qoy.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">FRITTATA</h1>
+                            <h2 class="food-item-rating">4.4
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.49</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631129/IMG_20241126_192301_fk6rqq.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">MEDLIMB</h1>
+                            <h2 class="food-item-rating">4.8
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.83</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-items ">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <h1 class="breakfast-heading mt-3 mb-3">STARTERS</h1>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631149/IMG_20241126_190231_v64qba.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">MANCHURIAN</h1>
+                            <h2 class="food-item-rating">4.3
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$2.38</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631130/IMG_20241126_192403_pb08h3.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">PAKODA</h1>
+                            <h2 class="food-item-rating">4.2
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$2.23</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631154/IMG_20241126_185917_vrrz5t.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">CHICKEN WINGS</h1>
+                            <h2 class="food-item-rating">4.7
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.43</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631153/IMG_20241126_185836_lj823c.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">CHICKEN LOLLIPOP</h1>
+                            <h2 class="food-item-rating">4.8
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.56</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631158/IMG_20241126_185938_x6vtro.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">CHICKEN 65</h1>
+                            <h2 class="food-item-rating">4.4
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$4.58</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631119/IMG_20241126_192438_qqwlus.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">VEG ROLLS</h1>
+                            <h2 class="food-item-rating">4.3
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.23</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631122/IMG_20241126_192352_d6eecv.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">PIGMEAT</h1>
+                            <h2 class="food-item-rating">4.2
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$4.28</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631119/IMG_20241126_192456_s1m2dg.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">LEAF ROLLS</h1>
+                            <h2 class="food-item-rating">4.1
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.28</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631091/IMG_20241126_193558_zlb5te.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">WING PAKODA</h1>
+                            <h2 class="food-item-rating">4.4
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$4.68</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631088/IMG_20241126_193745_gohaty.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">SAMOSA</h1>
+                            <h2 class="food-item-rating">4.2
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$1.68</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631103/IMG_20241126_193221_sftb1m.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">STARDOM</h1>
+                            <h2 class="food-item-rating">4.7
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.36</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631096/IMG_20241126_193456_tn1jer.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">CREAMY CRUNCH</h1>
+                            <h2 class="food-item-rating">4.4
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$4.68</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631140/IMG_20241126_190423_vet72x.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">LEMMY WINGS</h1>
+                            <h2 class="food-item-rating">4.2
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$4.21</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631146/IMG_20241126_190312_akrtnx.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">LEG STICKS</h1>
+                            <h2 class="food-item-rating">4.4
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$4.68</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-12 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631130/IMG_20241126_192150_wplzme.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">CABBY MUNCH</h1>
+                            <h2 class="food-item-rating">4.3
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$4.18</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-items ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="breakfast-heading mt-3 mb-3">SWEETS</h1>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631147/IMG_20241126_191851_wqa1vq.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">CHERRY NUTS</h1>
+                            <h2 class="food-item-rating">4.8
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.42</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631119/IMG_20241126_192634_ufi7id.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">VADAPAV</h1>
+                            <h2 class="food-item-rating">4.5
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.28</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631141/IMG_20241126_190439_cs4euq.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">SOSY MOMOS</h1>
+                            <h2 class="food-item-rating">4.4
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.42</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631126/IMG_20241126_192418_l2vpqt.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">JALEBI</h1>
+                            <h2 class="food-item-rating">4.8
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.83</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631118/IMG_20241126_192516_em45fs.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">GHEE LADOO</h1>
+                            <h2 class="food-item-rating">4.6
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.82</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631119/IMG_20241126_192704_ruf2ro.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">CRUNCH CHUCKS</h1>
+                            <h2 class="food-item-rating">4.3
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.72</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631115/IMG_20241126_192534_icr0jf.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">SWEET LADS</h1>
+                            <h2 class="food-item-rating">4.3
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.72</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631122/IMG_20241126_192327_tt5jha.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">lADDO</h1>
+                            <h2 class="food-item-rating">4.9
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$4.48</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631104/IMG_20241126_192839_exxxox.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">MOMO WIGS</h1>
+                            <h2 class="food-item-rating">4.2
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.22</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631104/IMG_20241126_192956_yjdlqe.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">SOAN PAPAD</h1>
+                            <h2 class="food-item-rating">4.8
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$4.29</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631094/IMG_20241126_193850_zhiax2.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">KAJU KATLEE</h1>
+                            <h2 class="food-item-rating">4.4
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$4.61</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631094/IMG_20241126_193422_pmknxv.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">SWEET TRIAMB</h1>
+                            <h2 class="food-item-rating">4.2
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.22</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631093/IMG_20241126_193642_rscsqh.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">KAJUS</h1>
+                            <h2 class="food-item-rating">4.3
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.49</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631094/IMG_20241126_193403_ketwaa.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">FLAPJACKS</h1>
+                            <h2 class="food-item-rating">4.2
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.22</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sub-items-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631108/IMG_20241126_192545_hqezue.jpg" alt="" class="item-image-container">
+                        <div class="name-rating-section">
+                            <h1 class="food-item-name">MUNCHING BLISS</h1>
+                            <h2 class="food-item-rating">4.6
+                                <span class="star">★</span>
+                            </h2>
+                        </div>
+                        <h1 class="price-tag">$3.62</h1>
+                        <button class="btn btn-warning buy-now">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-colore-he ">
+        <h1 class="breakfast-heading mt-3 mb-3 ml-5">Beverages</h1>
+        <div class="hoooo pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 order-1">
+                        <div class="fis-container">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631157/IMG_20241126_190015_ledabq.jpg" alt="" class="fis-image-container">
+                            <p class="rose-heading">Rose Milk</p>
+                            <p class="rose-price">$1.45</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 order-2">
+                        <div class="ppppp">
+                            <h1 class="pt-5 main-rose-heading">Rose Milk</h1>
+                            <p class="rose-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum quas aut atque recusandae, doloremque mollitia reiciendis deserunt eaque? Necessitatibus velit totam accusantium neque quas iusto fugiat nobis non ea Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae illum quam expedita reprehenderit veniam, explicabo optio ratione ex consequatur nulla ab? Saepe placeat architecto repudiandae doloribus voluptates numquam? Delectus, dolorem??</p>
+                            <button class="btn btn-warning">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="hoooo pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 order-md-2">
+                        <div class="fis-container">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631138/IMG_20241126_191914_clchdy.jpg" alt="" class="fis-image-container">
+                            <p class="rose-heading">Cinnamonn Sticks</p>
+                            <p class="rose-price">$1.35</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 order-md-1">
+                        <div class="ppppp">
+                            <h1 class="pt-5 main-rose-heading">Cinnamonn Sticks</h1>
+                            <p class="rose-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum quas aut atque recusandae, doloremque mollitia reiciendis deserunt eaque? Necessitatibus velit totam accusantium neque quas iusto fugiat nobis non ea Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae illum quam expedita reprehenderit veniam, explicabo optio ratione ex consequatur nulla ab? Saepe placeat architecto repudiandae doloribus voluptates numquam? Delectus, dolorem??</p>
+                            <button class="btn btn-warning">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="hoooo pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 order-md-1">
+                        <div class="fis-container">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631133/IMG_20241126_192054_fhsaog.jpg" alt="" class="fis-image-container">
+                            <p class="rose-heading">Tart Cocktail</p>
+                            <p class="rose-price">$1.23</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 order-md-2">
+                        <div class="ppppp">
+                            <h1 class="pt-5 main-rose-heading">Tart Cocktail</h1>
+                            <p class="rose-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum quas aut atque recusandae, doloremque mollitia reiciendis deserunt eaque? Necessitatibus velit totam accusantium neque quas iusto fugiat nobis non ea Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae illum quam expedita reprehenderit veniam, explicabo optio ratione ex consequatur nulla ab? Saepe placeat architecto repudiandae doloribus voluptates numquam? Delectus, dolorem??</p>
+                            <button class="btn btn-warning">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="hoooo pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 order-md-2">
+                        <div class="fis-container">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631138/IMG_20241126_192028_e34lob.jpg" alt="" class="fis-image-container">
+                            <p class="rose-heading">Tangy Extract</p>
+                            <p class="rose-price">$1.23</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 order-md-1">
+                        <div class="ppppp">
+                            <h1 class="pt-5 main-rose-heading">Tangy Extract</h1>
+                            <p class="rose-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum quas aut atque recusandae, doloremque mollitia reiciendis deserunt eaque? Necessitatibus velit totam accusantium neque quas iusto fugiat nobis non ea Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae illum quam expedita reprehenderit veniam, explicabo optio ratione ex consequatur nulla ab? Saepe placeat architecto repudiandae doloribus voluptates numquam? Delectus, dolorem??</p>
+                            <button class="btn btn-warning">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="hoooo pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 order-md-1">
+                        <div class="fis-container">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631134/IMG_20241126_192041_smgdvu.jpg" alt="" class="fis-image-container">
+                            <p class="rose-heading">Mango Exlir</p>
+                            <p class="rose-price">$1.23</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 order-md-2">
+                        <div class="ppppp">
+                            <h1 class="pt-5 main-rose-heading">Mango Exlir</h1>
+                            <p class="rose-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum quas aut atque recusandae, doloremque mollitia reiciendis deserunt eaque? Necessitatibus velit totam accusantium neque quas iusto fugiat nobis non ea Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae illum quam expedita reprehenderit veniam, explicabo optio ratione ex consequatur nulla ab? Saepe placeat architecto repudiandae doloribus voluptates numquam? Delectus, dolorem??</p>
+                            <button class="btn btn-warning">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="hoooo pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 order-md-2">
+                        <div class="fis-container">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631124/IMG_20241126_192242_c8oaal.jpg" alt="" class="fis-image-container">
+                            <p class="rose-heading">Summer Splash</p>
+                            <p class="rose-price">$1.23</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 order-md-1">
+                        <div class="ppppp">
+                            <h1 class="pt-5 main-rose-heading">Summer Splash</h1>
+                            <p class="rose-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum quas aut atque recusandae, doloremque mollitia reiciendis deserunt eaque? Necessitatibus velit totam accusantium neque quas iusto fugiat nobis non ea Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae illum quam expedita reprehenderit veniam, explicabo optio ratione ex consequatur nulla ab? Saepe placeat architecto repudiandae doloribus voluptates numquam? Delectus, dolorem??</p>
+                            <button class="btn btn-warning">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="hoooo pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 order-md-1">
+                        <div class="fis-container">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631146/IMG_20241126_192002_faufsq.jpg" alt="" class="fis-image-container">
+                            <p class="rose-heading">Citrus Elixir</p>
+                            <p class="rose-price">$1.23</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 order-md-2">
+                        <div class="ppppp">
+                            <h1 class="pt-5 main-rose-heading">Citrus Elixir</h1>
+                            <p class="rose-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum quas aut atque recusandae, doloremque mollitia reiciendis deserunt eaque? Necessitatibus velit totam accusantium neque quas iusto fugiat nobis non ea Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae illum quam expedita reprehenderit veniam, explicabo optio ratione ex consequatur nulla ab? Saepe placeat architecto repudiandae doloribus voluptates numquam? Delectus, dolorem??</p>
+                            <button class="btn btn-warning">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-items-section pt-3 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="breakfast-heading">Famous Items</h1>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="fms-sub-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732166811/freepik__candid-image-photography-natural-textures-highly-r__10829_jrblrq.jpg" alt="" class="famous-image-container">
+                        <div class="fms-main-sub pl-4">
+                            <h1 class="lobster-name">Lobster</h1>
+                            <p class="pppppd">Lobsters are malacostracans of the family Nephropidae. Three of their five pairs of legs have claws, including the first pair, which are usually much larger than the others.</p>
+                            <div class="stars-items">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i><span class="rating-color"> 4.7k ratings</span>
+                            </div>
+                            <div class="lobster-prices mt-3">
+                                <p class="price-lobster pr-4">$5.67</p>
+                                <button class="button-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="fms-sub-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732166829/freepik__candid-image-photography-natural-textures-highly-r__72251_ftyiso.jpg" alt="" class="famous-image-container">
+                        <div class="fms-main-sub pl-4">
+                            <h1 class="lobster-name">Tuna Fish</h1>
+                            <p class="pppppd">Lobsters are malacostracans of the family Nephropidae. Three of their five pairs of legs have claws, including the first pair, which are usually much larger than the others.</p>
+                            <div class="stars-items">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i><span class="rating-color"> 4.7k ratings</span>
+                            </div>
+                            <div class="lobster-prices mt-3">
+                                <p class="price-lobster pr-4">$5.67</p>
+                                <button class="button-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="fms-sub-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732166810/freepik__candid-image-photography-natural-textures-highly-r__10832_tk3rlq.jpg" alt="" class="famous-image-container">
+                        <div class="fms-main-sub pl-4">
+                            <h1 class="lobster-name">Lobster</h1>
+                            <p class="pppppd">Lobsters are malacostracans of the family Nephropidae. Three of their five pairs of legs have claws, including the first pair, which are usually much larger than the others.</p>
+                            <div class="stars-items">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i><span class="rating-color"> 4.7k ratings</span>
+                            </div>
+                            <div class="lobster-prices mt-3">
+                                <p class="price-lobster pr-4">$5.67</p>
+                                <button class="button-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="fms-sub-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732166810/freepik__candid-image-photography-natural-textures-highly-r__10830_fkkmdx.jpg" alt="" class="famous-image-container">
+                        <div class="fms-main-sub pl-4">
+                            <h1 class="lobster-name">Lobster</h1>
+                            <p class="pppppd">Lobsters are malacostracans of the family Nephropidae. Three of their five pairs of legs have claws, including the first pair, which are usually much larger than the others.</p>
+                            <div class="stars-items">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i><span class="rating-color"> 4.7k ratings</span>
+                            </div>
+                            <div class="lobster-prices mt-3">
+                                <p class="price-lobster pr-4">$5.67</p>
+                                <button class="button-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="fms-sub-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732166808/freepik__candid-image-photography-natural-textures-highly-r__37279_puzzyz.jpg" alt="" class="famous-image-container">
+                        <div class="fms-main-sub pl-4">
+                            <h1 class="lobster-name">Lobster</h1>
+                            <p class="pppppd">Lobsters are malacostracans of the family Nephropidae. Three of their five pairs of legs have claws, including the first pair, which are usually much larger than the others.</p>
+                            <div class="stars-items">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i><span class="rating-color"> 4.7k ratings</span>
+                            </div>
+                            <div class="lobster-prices mt-3">
+                                <p class="price-lobster pr-4">$5.67</p>
+                                <button class="button-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="fms-sub-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732166983/2931_dwbk1f.jpg" alt="" class="famous-image-container">
+                        <div class="fms-main-sub pl-4">
+                            <h1 class="lobster-name">Lobster</h1>
+                            <p class="pppppd">Lobsters are malacostracans of the family Nephropidae. Three of their five pairs of legs have claws, including the first pair, which are usually much larger than the others.</p>
+                            <div class="stars-items">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i><span class="rating-color"> 4.7k ratings</span>
+                            </div>
+                            <div class="lobster-prices mt-3">
+                                <p class="price-lobster pr-4">$5.67</p>
+                                <button class="button-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="fms-sub-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732166825/freepik__candid-image-photography-natural-textures-highly-r__72252_z7t9jb.jpg" alt="" class="famous-image-container">
+                        <div class="fms-main-sub pl-4">
+                            <h1 class="lobster-name">Lobster</h1>
+                            <p class="pppppd">Lobsters are malacostracans of the family Nephropidae. Three of their five pairs of legs have claws, including the first pair, which are usually much larger than the others.</p>
+                            <div class="stars-items">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i><span class="rating-color"> 4.7k ratings</span>
+                            </div>
+                            <div class="lobster-prices mt-3">
+                                <p class="price-lobster pr-4">$5.67</p>
+                                <button class="button-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="fms-sub-container mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732166807/freepik__candid-image-photography-natural-textures-highly-r__37281_llfjan.jpg" alt="" class="famous-image-container">
+                        <div class="fms-main-sub pl-4">
+                            <h1 class="lobster-name">Lobster</h1>
+                            <p class="pppppd">Lobsters are malacostracans of the family Nephropidae. Three of their five pairs of legs have claws, including the first pair, which are usually much larger than the others.</p>
+                            <div class="stars-items">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i><span class="rating-color"> 4.7k ratings</span>
+                            </div>
+                            <div class="lobster-prices mt-3">
+                                <p class="price-lobster pr-4">$5.67</p>
+                                <button class="button-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="door-delivery-section ">
+        <div class="sub-door ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 col-lg-4 p-md-5">
+                        <div class="imkkk">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732788680/1732788614184_zuuhiq.png" alt="" class="door-delivery-image">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-9 mt-md-5 col-lg-8 pt-md-5">
+                        <h1 class="delivery-heading mb-md-4">Door Delivery</h1>
+                        <p class="delivery-description">Couriers are distinguished from ordinary mail services by features such as speed, security, tracking, signature, specialization and individualization of express services, and swift delivery times, which are optional for most everyday mail services. As a premium service, couriers are usually more expensive than standard mail services, and their use is normally limited to packages where one or more of these features are considered important enough to warrant the cost.</p>
+                        <a href="#product-section"><button class="btn btn-primary">Order Now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousels " id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="master-cheff">About Aldenaire</h1>
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732682220/backgroud-image-restauren_pzpjnv.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3800">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732795729/bulbs_restarent_kpdnv6.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3500">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732795729/bar_restarent_js1lz6.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="3300">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732682082/restaurent_home_page_gs0yrm.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732795730/dining_area_restaurent_zge61n.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="3400">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732795759/restarent_image_home_2_a9g4e7.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="3700">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732795736/aldenaire_restarent_cqmtcv.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732682220/backgroud-image-restauren_pzpjnv.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732795760/restarent_image_1_somcpf.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732795766/tables_in_the_restaurent_ttmvfq.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732795769/kitchen_restaurent_guitm3.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732795769/reception_restaurent_y6tipq.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732795769/parking_area_restarent_jwrqfb.webp" class="d-block w-100" alt="..." id="carousel-image">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <main>
+                        <!-- Login Button -->
+                        <div class="button-container">
+                            <button class="login-button" onclick="openLoginForm()">Book a Table</button>
+                        </div>
+
+                        <!-- Login Form -->
+                        <div class="login-form-container" id="loginForm">
+                            <form class="login-form">
+                                <h2 class="booking-restaurent">Aldenaire Restaurent</h2>
+                                <div class="form-group namtext">
+                                    <input type="text" id="username" name="username" placeholder="Enter your name" required>
+                                </div>
+
+                                <div class="form-group password">
+                                    <input type="password" id="password" name="phonenumber" placeholder="Enter your phonenumber" required>
+                                </div>
+
+                                <div class="form-group dates">
+                                    <input type="date" id="bdy" required>
+                                </div>
+                                <div class="form-group cards">
+                                    <select id="payment">
+                                        <option value="Credit Caed">Credit Card</option>
+                                        <option value="PhonePay">Phonepay</option>
+                                        <option value="Googlepay">Gpay</option>
+                                    </select>
+                                </div>
+                                <div id="login-button-down">
+                                    <button type="submit" class="login-buttons">Book Now</button>
+                                </div>
+                                <button type="button" class="close-button" onclick="closeLoginForm()">Close</button>
+                            </form>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-12 mt-5">
+                <div class="ratio ratio-16x9 ">
+                    <iframe src="https://www.youtube.com/embed/WdWEMXnHBVI?rel=0" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mt-5 d-none d-md-block">
+                <div class="ratio ratio-16x9 ">
+                    <iframe src="https://www.youtube.com/embed/Ua9feLSGXMM?rel=0" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="construction">
+                    <h4 class="construct-name">Behind the Design</h4>
+                    <p class="construct-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis facere eveniet amet excepturi saepe totam, aspernatur ullam, aut facilis, vel nesciunt inventore numquam vitae doloribus in cum ducimus et iusto.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mt-5 d-none d-md-block">
+                <div class="ratio ratio-16x9 ">
+                    <iframe src="https://www.youtube.com/embed/rI8FOLA-9XM?rel=0" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="construction">
+                    <h4 class="construct-name">Our cafe & Bar</h4>
+                    <p class="construct-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis facere eveniet amet excepturi saepe totam, aspernatur ullam, aut facilis, vel nesciunt inventore numquam vitae doloribus in cum ducimus et iusto.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mt-5 d-none d-md-block">
+                <div class="ratio ratio-16x9 ">
+                    <iframe src="https://www.youtube.com/embed/78z9wfm-Gtg?rel=0" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="construction">
+                    <h4 class="construct-name">Inside Our Restaurent</h4>
+                    <p class="construct-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis facere eveniet amet excepturi saepe totam, aspernatur ullam, aut facilis, vel nesciunt inventore numquam vitae doloribus in cum ducimus et iusto.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mt-5 d-none d-md-block">
+                <div class="ratio ratio-16x9 ">
+                    <iframe src="https://www.youtube.com/embed/jG1IdUFtd-g?rel=0" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="construction">
+                    <h4 class="construct-name">Restaurent construction</h4>
+                    <p class="construct-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis facere eveniet amet excepturi saepe totam, aspernatur ullam, aut facilis, vel nesciunt inventore numquam vitae doloribus in cum ducimus et iusto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-cheffs ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <h1 class="master-cheff">Our Master Cheffs</h1>
+                </div>
+
+                <div class="col-4 col-md-4 mb-3">
+                    <div class="master-identity">
+                        <div class="image-master-cheff">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732799072/master_cheff_45_vuejqx.webp" alt="" class="master-cheff-image">
+                        </div>
+                        <h5 class="master-name">Phil Salt</h5>
+                        <p class="master-sur-name">Great for making sea foods </p>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-4 mb-3">
+                    <div class="master-identity">
+                        <div class="image-master-cheff">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732799072/master_cheff_men_jms0bq.webp" alt="" class="master-cheff-image">
+                        </div>
+                        <h5 class="master-name">Lizard Williams</h5>
+                        <p class="master-sur-name">Great for Vegetarian items</p>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-4 mb-3">
+                    <div class="master-identity">
+                        <div class="image-master-cheff">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732799073/master_cheff_old_fpxxun.webp" alt="" class="master-cheff-image">
+                        </div>
+                        <h5 class="master-name">Harry Potter</h5>
+                        <p class="master-sur-name">Great for all mixture everything</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-rating-back p-5 mt-2 ">
+        <div class="container  p-4 mt-4">
+            <h4 class="review">Reviews</h4>
+            <div class="d-flex align-items-center mb-3">
+                <h1 class="mb-0 kiiiii">5.0</h1>
+                <div class="ms-3 mt-3 ">
+                    <div class="d-flex star-colores">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span class="jiiii">8.2lakhs reviews</span>
+                </div>
+            </div>
+            <div class="mb-2">
+                <div class="d-flex justify-content-between ">
+                    <span class="span">Excellent</span>
+                    <span class="span">7.1 Lakhs</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar " role="progressbar" style="width: 91%;" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="mb-2">
+                <div class="d-flex justify-content-between">
+                    <span class="span">Very good</span>
+                    <span class="span">5.7k</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style="width: 58%;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="mb-2">
+                <div class="d-flex justify-content-between">
+                    <span class="span">Average</span>
+                    <span class="span">1.3k</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar " role="progressbar" style="width: 35%;" aria-valuenow="0.2" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="mb-2">
+                <div class="d-flex justify-content-between">
+                    <span class="span">Poor</span>
+                    <span class="span">742</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar " role="progressbar" style="width: 15%;" aria-valuenow="0.4" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="mb-2">
+                <div class="d-flex justify-content-between">
+                    <span class="span">Terrible</span>
+                    <span class="span">131</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style="width: 7%;" aria-valuenow="0.4" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-riveiws ">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="review-main mb-3">
+                        <div class="review-background">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732555885/file-HkezkiJgYVZ56uRoxdiB8p_h6ywep.webp" alt="" class="reveiver-image">
+                            <div class="">
+                                <h1 class="john-name">John Doe</h1>
+                                <p class="john-description">Really good</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, doloremque autem! Aliquam, dignissimos quo et consectetur assumenda velit ab placeat ex facere unde nostrum quidem veritatis iste amet animi modi?</p>
+                        <div class="star-reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="review-main mb-3">
+                        <div class="review-background">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732555884/IMG_20241125_225736_arfu8z.jpg" alt="" class="reveiver-image">
+                            <div class="">
+                                <h1 class="john-name">Steive smith</h1>
+                                <p class="john-description">Awesome Restaurent</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, doloremque autem! Aliquam, dignissimos quo et consectetur assumenda velit ab placeat ex facere unde nostrum quidem veritatis iste amet animi modi?</p>
+                        <div class="star-reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="review-main mb-3">
+                        <div class="review-background">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1701412000/samples/smile.jpg" alt="" class="reveiver-image">
+                            <div class="">
+                                <h1 class="john-name">David Gruice</h1>
+                                <p class="john-description">Tasty Food</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, doloremque autem! Aliquam, dignissimos quo et consectetur assumenda velit ab placeat ex facere unde nostrum quidem veritatis iste amet animi modi?</p>
+                        <div class="star-reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="review-main mb-3">
+                        <div class="review-background">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1701411973/samples/people/kitchen-bar.jpg" alt="" class="reveiver-image">
+                            <div class="">
+                                <h1 class="john-name">John Doe</h1>
+                                <p class="john-description">Good Service</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, doloremque autem! Aliquam, dignissimos quo et consectetur assumenda velit ab placeat ex facere unde nostrum quidem veritatis iste amet animi modi?</p>
+                        <div class="star-reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="review-main mb-3">
+                        <div class="review-background">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732555884/file-FoYc8rWWq7Wp2viys2Tw4u_kfycpi.webp" alt="" class="reveiver-image">
+                            <div class="">
+                                <h1 class="john-name">Vijs byar</h1>
+                                <p class="john-description">Premium Experience</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, doloremque autem! Aliquam, dignissimos quo et consectetur assumenda velit ab placeat ex facere unde nostrum quidem veritatis iste amet animi modi?</p>
+                        <div class="star-reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="review-main mb-3">
+                        <div class="review-background">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732555884/file-DbMficaRD29VVfVArEQyM2_yfxjyq.webp" alt="" class="reveiver-image">
+                            <div class="">
+                                <h1 class="john-name">Kally Cruice</h1>
+                                <p class="john-description">Really good</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, doloremque autem! Aliquam, dignissimos quo et consectetur assumenda velit ab placeat ex facere unde nostrum quidem veritatis iste amet animi modi?</p>
+                        <div class="star-reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-location d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 ml-3 ml-md-0 mt-3 mt-md-5">
+                    <div class="location-head mt-md-5 ml-md-4 ">
+                        <h1 class="our-location">Our Location</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a autem corrupti perferendis debitis alias quaerat. Ipsum et nulla rem id consequatur vel assumenda tempora, amet molestiae harum consectetur at.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 map-location mt-md-5">
+                    <div class="">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7310672.850198179!2d77.36963975168622!3d26.530913332912146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9887b71d909e1a9%3A0x64a7d41836a9757d!2sALDENAIRE%20ADVENTURE!5e0!3m2!1sen!2sin!4v1732894728102!5m2!1sen!2sin" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="address-main " id="contact-us">
+        <div class="mb-3">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contact-head">
+                            <h1 class="contacts-head">Contact Us</h1>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-md-4">
+                        <div class="icons-address">
+                            <div>
+                                <div class="solid">
+                                    <i class="fa-solid fa-location-dot adress"></i><br>
+                                </div>
+                                <div>
+                                    <span>SR Nagar</span>
+                                    <br>
+                                    <span>Saibaba Colony</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-4 col-md-4">
+                        <div class="icons-address">
+                            <div>
+                                <div class="solid">
+                                    <i class="fa-solid fa-phone adress"></i><br>
+                                </div>
+
+                                <div>
+                                    <span>+0092 8765432981</span>
+                                    <br>
+                                    <span>+0094 4563432981</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-4 col-md-4">
+                        <div class="icons-address">
+                            <div>
+                                <div class="solid">
+                                    <i class="fa-solid fa-envelope adress"></i><br>
+                                </div>
+                                <div>
+                                    <span>aldenaire234@gmail.com</span>
+                                    <br>
+                                    <span>aldenaire89@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+                        <div class="profile-main">
+                            <div class="my-profile-head">
+                                <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733017899/IMG_20241201_072122_a5fjyu.jpg" alt="" class="my-profile">
+                                <div>
+                                    <span class="my-profile-heading">Hanumanth Reddy</span><br>
+
+                                    <span class="my-profile-description">Aldenaire Restaurent Manager</span><br>
+                                    <div class="mail-one">
+                                        <a href="mailto:hanureddy899@gmail.com" class="iiii">
+                                            <i class="fa-solid fa-envelope "></i>
+                                            <span class="my-profile-mail">hanumanthreddyaldenaire@gmail.com</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="send-mesg">Send Us a message</p>
+                        <p class="send-description">if you you have any work from me or any types of queries related to my tutorial,you can send me message from here. it's my pleasure to help you.</p>
+                        <input type="text" id="message-text" placeholder="Enter your name"><br><br>
+                        <input type="email" id="message-email" placeholder="Enter your email"><br><br>
+                        <textarea rows="5" cols="25" id="message-area" placeholder="Enter your message"></textarea>
+                        <br>
+                        <br>
+                        <button class="btn btn-warning">Send Now</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-image">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1732631085/IMG_20241126_194934_tyum2b.png" alt="" class="footer-logo">
+                        <p class="footer-heading">Come and Visit Our Aldenaire Restaurent</p>
+                    </div>
+                    <p class="footer-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem qui magni totam dolor veniam animi autem. Saepe voluptatibus odio sequi eum qui ipsum libero. Vero harum explicabo quia ducimus iusto.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div>
+                        <h1 class="awesome-heading">Awesome Restaurent</h1>
+                        <span class="awesome-description">Quality Food</span><br>
+                        <span class="awesome-description">Premium Experience</span><br>
+                        <span class="awesome-description">Bar & Restaurent</span><br>
+                        <span class="awesome-description">Waiting Hall</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div>
+                        <h1 class="awesome-heading">About Aldenaire</h1>
+                        <span class="awesome-description">Visit Us</span><br>
+                        <span class="awesome-description">Download</span><br>
+                        <span class="awesome-description">All Varieties</span><br>
+                        <span class="awesome-description">Change Theme</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div>
+                        <h1 class="awesome-heading">Our Community</h1>
+                        <span class="awesome-description">GitHub</span><br>
+                        <span class="awesome-description">Youtube</span><br>
+                        <span class="awesome-description">Threads</span><br>
+                        <span class="awesome-description">Aldenaire Swag</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div>
+                        <h1 class="awesome-heading">Help</h1>
+                        <span class="awesome-description">Support</span><br>
+                        <span class="awesome-description">Troubleshooting</span><br>
+                        <span class="awesome-description">Contact Us</span><br>
+                        <span class="awesome-description">Explore</span>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <hr>
+                <div class="col-4">
+                    <div>
+                        <h1 class="awesome-heading">Our Priorities</h1>
+                        <span class="awesome-description">License</span><br>
+                        <span class="awesome-description">Terms of Service</span><br>
+                        <span class="awesome-description">Privacy Policy</span><br>
+                        <span class="awesome-description">Refunds</span>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-8 mt-3">
+                    <p class="follow-us">Follow Us</p>
+                    <div class="links-follow">
+                        <div class="links-in">
+                            <a href="https://www.twitter.com/@reddyhanumanth6" target="_blank">
+                                <i class="fa-brands fa-twitter links lks pll-1"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.instagram.com/__reddy_hanumanth__" target="_blank">
+                                <i class="fa-brands fa-instagram links lks pll-2"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href=" https://www.facebook.com/reddy.hanumanth.547" target="_blank">
+                                <i class="fa-brands fa-facebook links lks pll-3"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.linkedin.com/in." target="_blank">
+                                <i class="fa-brands fa-linkedin links lks pll-4"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.youtube.com/@bro_techs " target="_blank">
+                                <i class="fa-brands fa-youtube links lks pll-5 "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="copyright">
+                    <p class="pppppj">Copyright 2024-2025 All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- JavaScript -->
+    <script>
+        function openLoginForm() {
+            document.getElementById("loginForm").style.display = "flex";
+        }
+
+        function closeLoginForm() {
+            document.getElementById("loginForm").style.display = "none";
+        }
+    </script>
+
+    <link rel="stylesheet" href="food.js">
+</body>
+
+</html>

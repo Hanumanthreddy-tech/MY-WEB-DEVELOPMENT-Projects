@@ -1,0 +1,1174 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bokor&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@600&family=Faculty+Glyphic&family=Ga+Maamli&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Pacifico&family=Ponnala&family=Protest+Revolution&family=Rubik+Mono+One&family=Sacramento&family=Sarina&family=Satisfy&family=Sofia&display=swap');
+
+
+
+
+.send-description {
+    color: rgb(199, 192, 192);
+    font-size: 12px;
+}
+
+.send-mesg {
+    color: white;
+    font-size: 15px;
+    margin-top: 19px;
+    margin-bottom: 0px;
+}
+
+#message-email,
+#message-text,
+#message-area {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+#message-email::placeholder {
+    font-size: 13px;
+    color: rgb(122, 112, 112);
+}
+
+#message-text::placeholder {
+    font-size: 13px;
+    color: rgb(122, 112, 112);
+}
+
+#message-area::placeholder {
+    font-size: 13px;
+}
+
+#message-area,
+#message-email,
+#message-text {
+    width: 100%;
+}
+
+span {
+    font-size: 12px;
+}
+
+.icons-address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contact-head {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Faculty Glyphic", serif;
+}
+
+.contacts-head {
+    font-size: 30px;
+    padding: 20px;
+
+}
+
+.adress {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.phonenum {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.mails {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.address-main {
+    background: linear-gradient(rgb(91, 32, 32), rgb(6, 4, 4), rgb(137, 102, 102));
+    padding-bottom: 30px;
+
+}
+
+.solid {
+    color: red;
+    margin-bottom: 15px;
+}
+
+span {
+    color: rgb(255, 255, 255);
+}
+
+.pll-5 {
+    color: red;
+}
+
+.pll-4 {
+    color: #3164be;
+}
+
+.pll-3 {
+    color: #063bfc;
+}
+
+.pll-2 {
+    color: red;
+}
+
+.pll-1 {
+    color: rgb(20, 3, 254);
+}
+
+.lks {
+
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.follow-us {
+    text-align: center;
+    color: #18181b;
+    font-weight: 500;
+}
+
+.links-follow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.awesome-description {
+    color: rgb(181, 175, 175);
+    font-size: 12px;
+}
+
+.awesome-heading {
+    font-size: 16px;
+    color: #18181b;
+}
+
+.main-footer {
+    padding-top: 20px;
+    background-color: #3f3f42;
+}
+
+.footer-heading {
+    font-size: 17px;
+    color: #d9d9d9;
+}
+
+.footer-description {
+    color: rgb(205, 200, 200);
+    font-size: 12px;
+}
+
+.pppppj {
+    color: #8a8a8a;
+}
+
+.footer-logo {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footer-image {
+    display: flex;
+    color: white;
+    gap: 10px;
+    text-align: center;
+}
+
+.underline,
+.underline:hover {
+    text-decoration: none;
+    color: rgb(71, 90, 231);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.sign-up {
+    padding-left: 5px;
+    font-weight: 500;
+    color: rgb(68, 68, 225);
+    cursor: pointer;
+}
+
+.account {
+    box-shadow: 0px 0px 3px, -0px -0px 1px;
+    text-align: center;
+    width: 80%;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.forgot-psd {
+    text-align: end;
+    font-size: 12px;
+}
+
+#google {
+    background: linear-gradient(red, rgb(134, 237, 31), blue);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
+.ggole-name {
+    padding-top: 12px;
+    color: white;
+
+}
+
+#Username,
+#email,
+#Password {
+    padding: 5px;
+}
+
+.google-logo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid;
+    height: 24px;
+    padding: 16.5px;
+    border-radius: 3px;
+}
+
+input::placeholder {
+    color: rgb(96, 95, 95);
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.divider-text {
+    color: rgb(117, 116, 116);
+    font-size: 12px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    border: 1px solid rgb(201, 199, 199);
+    flex: 1;
+    margin: 0px 5px;
+
+}
+
+.btn-login {
+    background-color: rgb(37, 146, 205);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.main-login-form {
+    background-color: rgb(255, 255, 255);
+}
+
+.login-heading {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "Berkshire Swash", serif;
+    font-size: 25px;
+}
+
+.names-login-page {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+    backdrop-filter: blur(50px);
+    background-color: white;
+    box-shadow: 0px 0px 3px, -0px -0px 1px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-login {
+    height: 400px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.our-location {
+    font-family: "Faculty Glyphic", serif;
+    font-size: 30px;
+}
+
+iframe {
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.main-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: conic-gradient(rgb(110, 105, 105), rgb(3, 3, 3));
+    padding: 20px;
+    height: 90vh;
+}
+
+.location-head {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.construct-description {
+    font-size: 13px;
+}
+
+.construct-name {
+    font-size: 15px;
+
+}
+
+.construction {
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.main-riveiws {
+    background: conic-gradient(rgb(66, 62, 62), rgb(80, 80, 100));
+}
+
+.star-reviews {
+    color: red;
+}
+
+.review-main {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.john-name {
+    font-size: 20px;
+}
+
+.john-description {
+    font-size: 14px;
+    color: #736868;
+
+}
+
+.reveiver-image {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.review-background {
+    display: flex;
+    gap: 30px;
+
+
+}
+
+.kiiiii {
+    color: white
+}
+
+.jiiii {
+    color: rgb(174, 167, 167);
+    font-size: 12px;
+}
+
+.span {
+    color: white;
+}
+
+.star-colores {
+    color: red;
+    letter-spacing: 10px;
+}
+
+.review {
+    color: white;
+    text-decoration: underline;
+}
+
+.main-rating-back {
+    background: conic-gradient(rgb(247, 247, 247), rgb(0, 0, 0));
+}
+
+.nabwidth {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.progress-bar {
+    background-color: rgb(236, 12, 12);
+}
+
+.carousel-caption {
+    backdrop-filter: blur(2px);
+}
+
+.master-identity {
+    background-color: rgb(242, 243, 245);
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(20px);
+    border: solid 1px white;
+    height: max-content;
+}
+
+.master-sur-name {
+    color: black;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.image-master-cheff {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-cheffs {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.master-cheff-image {
+    height: 100px;
+    border-radius: 50%;
+    padding-bottom: 10px;
+
+}
+
+.master-name {
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.master-cheff {
+    color: rgb(255, 255, 255);
+    font-family: "Faculty Glyphic", serif;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+}
+
+.about-aldenaure {
+    color: white;
+    font-family: "Faculty Glyphic", serif;
+    font-size: 20px;
+
+}
+
+#carousel-image {
+    border-radius: 20px;
+
+}
+
+.delivery-heading {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Faculty Glyphic", serif;
+    background: linear-gradient(red, blue);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.imkkk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery-description {
+    color: rgb(221, 219, 219);
+    font-weight: 500;
+    font-family: "Satisfy", serif;
+}
+
+.door-delivery-image {
+    height: 300px;
+    animation: slideLeft 2s infinite;
+}
+
+@keyframes slideLeft {
+    from {
+        margin-left: 40%;
+    }
+
+    to {
+        margin-left: -50%;
+    }
+
+}
+
+.door-delivery-section {
+    background-color: transparent;
+    height: max-content;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.main-items-section {
+    background: conic-gradient(black, rgb(255, 213, 0), black);
+    overflow: hidden;
+}
+
+.price-lobster {
+    color: rgb(12, 12, 12);
+    font-weight: 700;
+    font-size: larger;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.pppppd {
+    color: rgb(186, 176, 176);
+    font-size: 12px;
+}
+
+.fms-main-sub {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-color {
+    color: rgb(138, 135, 135);
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+
+.button-buy {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(249, 10, 10);
+    border: none;
+    border-radius: 5px;
+    color: rgb(13, 13, 13);
+    font-weight: 600;
+}
+
+.lobster-prices {
+    display: flex;
+    flex-direction: row;
+}
+
+.stars-items {
+    color: rgb(249, 102, 10);
+}
+
+.lobster-name {
+    font-size: 20px;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    font-family: "Faculty Glyphic", serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.fms-sub-container {
+
+    border: solid 1px white;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    background-color: rgb(252, 253, 253);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.famous-image-container {
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-colore-he {
+    background: conic-gradient(black, rgb(235, 143, 4), black, rgb(235, 143, 4), black);
+    padding: 10px;
+
+}
+
+.main-rose-heading {
+    color: white;
+    font-size: 20px;
+    font-family: "Berkshire Swash", serif;
+}
+
+.rose-description {
+    color: white;
+
+}
+
+.hoooo {
+    border: solid;
+    border-radius: 20px;
+    margin: 20px;
+    border-color: rgb(83, 85, 87);
+}
+
+.rose-heading {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rose-price {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.fis-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 30px rgb(8, 8, 8);
+    border: solid;
+    margin: 10px;
+    max-width: 800px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.fis-image-container {
+    height: 200px;
+    display: flex;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.buy-now {
+    color: white;
+    font-weight: bold;
+}
+
+.price-tag {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(253, 250, 249);
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(42, 41, 41);
+}
+
+.food-item-rating {
+    font-size: 18px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bolder;
+}
+
+.food-item-name {
+    font-size: 20px;
+    font-family: "Faculty Glyphic", serif;
+    font-weight: 600;
+}
+
+.name-rating-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.breakfast-heading {
+    font-family: "Rubik Mono One", serif;
+    color: rgb(243, 8, 8);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.oi-main-para {
+    color: rgb(193, 193, 193);
+    font-family: "Satisfy", serif;
+    text-align: center;
+
+}
+
+.oi-main-heading {
+    font-family: "Protest Revolution", serif;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.main-items {
+    background: conic-gradient(black, rgb(235, 143, 4), black);
+    padding: 10px;
+}
+
+.sub-items-container {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 3px 3px 50px;
+
+}
+
+.item-image-container {
+    height: 250px;
+    border-radius: 50px;
+}
+
+.wcu-main-para {
+    color: rgb(193, 193, 193);
+    font-family: "Satisfy", serif;
+    text-align: center;
+}
+
+.wcu-main-heading {
+    color: white;
+    font-size: 25px;
+    font-family: "Protest Revolution", serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wcu-para {
+    font-size: 13px;
+    text-align: center;
+    color: rgb(92, 88, 95);
+    font-family: "Sofia", serif;
+}
+
+.wcu-heading {
+    font-size: 17px;
+    color: rgb(9, 9, 231);
+    font-weight: bold;
+    font-family: "Berkshire Swash", serif;
+}
+
+.image-content-wcu {
+    height: 140px;
+}
+
+.wcu-card-section {
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 30px;
+}
+
+.choose-us-container {
+    background: conic-gradient(black, rgb(235, 143, 4), black);
+    padding: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.restaurent-name {
+    font-family: "Faculty Glyphic", serif;
+    font-weight: 500;
+}
+
+#aldenaire-image-logo {
+    height: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(21, 14, 14);
+    font-weight: bold;
+}
+
+#nav-icons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-icons .nav-link:hover {
+    background-color: rgb(224, 127, 9);
+    border-radius: 10px;
+}
+
+.home-section-main {
+    background-image: url("https://res.cloudinary.com/dhfrl63l6/image/upload/v1732688830/lights_none_e7sjlw.webp");
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    background: conic-gradient(rgb(0, 0, 0), black);
+}
+
+/* General Reset */
+main {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+#login-button-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+
+/* Button Styling */
+.button-container {
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 10px 30px;
+    outline: none;
+}
+
+.namtext {
+    width: 100%;
+}
+
+.password {
+    width: 100%;
+}
+
+.dates {
+    width: 100%;
+}
+
+.cards {
+    width: 100%;
+}
+
+#payment {
+    padding: 12px;
+    color: rgb(90, 88, 88);
+    font-size: 13px;
+}
+
+.booking-restaurent {
+    font-size: 20px;
+    font-family: "Faculty Glyphic", serif;
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: rgb(244, 7, 11);
+    color: white;
+    padding: 8px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 20px, -3px -3px 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-buttons {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #50ef06;
+    transform: scale(1.05);
+}
+
+.login-button:active {
+    background-color: #03cdfa;
+    transform: scale(0.95);
+}
+
+/* Login Form Styling */
+.login-form-container {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000%;
+    overflow: hidden;
+}
+
+.login-form {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Close Button Styling */
+.close-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.close-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+.close-button:active {
+    background-color: #c62828;
+    transform: scale(0.95);
+}
+
+
+/* General styling for the body */
+mbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Hide the login form by default */
+#displayloginform {
+    display: none;
+    position: absolute;
+    background-color: rgb(250, 247, 247);
+    width: 100%;
+    height: 120vh;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 10;
+
+}
+
+.back-button {
+    background-color: rgb(65, 65, 56);
+    border: 1px solid;
+    padding: 5px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: rgb(40, 33, 133);
+
+}
+
+.clickme {
+    color: rgb(240, 10, 10);
+    text-align: center;
+}
+
+.gigigi {
+    margin: 50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* Show the form when the checkbox is checked */
+#toggleLogin:checked~#displayloginform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay to dim the background when the form is open */
+#toggleLogin:checked~.overlay {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+
+
+
+
+
+
+
+.my-profile {
+    height: 70px;
+    border-radius: 50%;
+}
+
+.my-profile-head {
+    display: flex;
+    gap: 30px;
+}
+
+.my-profile-heading {
+    color: rgb(249, 8, 8);
+    padding: 0px;
+    font-family: "Josefin Sans", serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.my-profile-description {
+    color: rgb(7, 54, 241);
+    padding: 0px;
+    font-size: 10px;
+}
+
+.profile-main {
+    background-color: white;
+    padding: 10px;
+    border-radius: 29px;
+    margin-top: 20px;
+}
+
+.my-profile-mail {
+    color: rgb(56, 51, 51);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.my-profile-mail:hover {
+    color: blue;
+}
+
+.iiii {
+    text-decoration: none;
+    color: #5e5251;
+    padding-top: 3px;
+}
+
+.iiii:hover {
+    text-decoration: none;
+}
+
+.mail-one {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
