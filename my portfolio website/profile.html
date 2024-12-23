@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/32ffb05717.js" crossorigin="anonymous"></script>
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="animtions.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <!-- Brand -->
-                    <a class="navbar-brand heading-name" href="#">Port<span class="folio-name">folio</span></a>
+                    <a class="navbar-brand heading-name portfolio" href="#">Port<span class="folio-name">folio</span></a>
 
                     <!-- Toggler for Mobile -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,57 +26,57 @@
                     </button>
 
                     <!-- Navbar Links -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="collapse navbar-collapse " id="navbarNav">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#home">Home</a>
+                                <a class="nav-link" href="#home" style="--i:1">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
+                                <a class="nav-link" href="#about" style="--i:2">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#skills">Skills</a>
+                                <a class="nav-link" href="#skills" style="--i:3">Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#services">Service</a>
+                                <a class="nav-link" href="#services" style="--i:4">Service</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
+                                <a class="nav-link" href="#contact" style="--i:5">Contact</a>
                             </li>
                         </ul>
 
                         <!-- CV Download Button -->
                         <a href="profile.pdf" download>
-                            <button class="cv-btn">Download CV <i class="fa-solid fa-download"></i></button>
+                            <button class="cv-btn cvBtn">Download CV <i class="fa-solid fa-download"></i></button>
                         </a>
                     </div>
                 </div>
             </nav>
         </div>
-        <div class="container">
+        <div class="container" id="home">
             <div class="profile-section">
                 <dic class="row sdgggg">
-                    <div class="col-12 col-md-6 image-shdw">
-                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1734599783/1734599214260_kxgw0q.png" class="image-photo">
+                    <div class="col-12 col-md-6 image-shdw imageContaienr">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1734776786/1734776659678_iynfuu.jpg" class="image-photo">
                     </div>
-                    <div class="col-md-6 col-12">
+                    <div class="col-md-6 col-12 BioSection">
                         <div class="headings-bio">
-                            <h5 class="helloID">Hello I'm</h5>
-                            <h1 class="myName">Hanumanth Reddy</h1>
-                            <h5 class="">And I'm a <span class="developer auto-type"></span></h5>
-                            <p class="para-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aliquid et eos nihil reiciendis omnis voluptatum, esse sapiente recusandae ipsa?</p>
+                            <h5 class="helloID" style="--i:1"></h5>
+                            <h1><span class="myName" style="--i:2"></span></h1>
+                            <h5 class="myDesignation" style="--i:3">And I'm a <span class="developer auto-type"></span></h5>
+                            <p class="para-bio" style="--i:4">Hi, I’m Hanumanth Reddy, a passionate web developer with a strong foundation in Python, HTML, CSS, JavaScript,Bootstrap and SQL. I graduated from St.joseph Degree College at Rayalaseema University and have further enhanced my skills by completing a professional course at NXTWAVE.</p>
                         </div>
-                        <div class="social-icons">
-                            <i class="fa-brands fa-square-facebook"></i>
-                            <i class="fa-brands fa-square-x-twitter"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-square-youtube"></i>
-                            <i class="fa-solid fa-square-envelope"></i>
+                        <div class="social-icons socialIcons">
+                            <a href="https://www.facebook.com/reddy.hanumanth.547" target="_blank"><i class="fa-brands fa-square-facebook" style="--i:1"></i></a>
+                            <a href="https://x.com/REDDYHANUMANTH6"><i class="fa-brands fa-square-x-twitter" style="--i:2"></i></a>
+                            <a href="https://www.instagram.com/__reddy_hanumanth__/" target="_blank"><i class="fa-brands fa-square-instagram" style="--i:3"></i></a>
+                            <a href="https://www.linkedin.com/in/reddy-505334291/"><i class="fa-brands fa-linkedin" style="--i:4"></i></a>
+                            <a href="https://www.youtube.com/channel/UCZ32IdpiTg5ht3tmuSfpr_w"><i class="fa-brands fa-square-youtube" style="--i:5"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/#sent"><i class="fa-solid fa-square-envelope" style="--i:6"></i></a>
                         </div>
-                        <div class="button-contents mt-3">
-                            <button class="Hire-me-btn">Hire Me</button>
-                            <button class="contact-me-btn">Contact Me</button>
+                        <div class="button-contents buttonContents mt-3">
+                            <button class="Hire-me-btn" style="--i:1">Hire Me</button>
+                            <button class="contact-me-btn" style="--i:2">Contact Me</button>
                         </div>
                     </div>
                     <div>
@@ -83,27 +84,27 @@
                             <div class="row">
 
                                 <div class="col-6 col-md-3 mb-4">
-                                    <div class="sub-projects">
+                                    <div class="sub-projects subProjects">
                                         <h1>6+</h1>
                                         <p class="pr-5">Months of <br>experience</p>
                                     </div>
                                 </div>
 
                                 <div class="col-6 col-md-3">
-                                    <div class="sub-projects">
+                                    <div class="sub-projects subProjects">
                                         <h1>30+</h1>
                                         <p>Projects <br>completed</p>
                                     </div>
                                 </div>
 
                                 <div class="col-6 col-md-3">
-                                    <div class="sub-projects">
+                                    <div class="sub-projects subProjects">
                                         <h1>5+</h1>
                                         <p>Technologies <br>masterd</p>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-3">
-                                    <div class="sub-projects">
+                                    <div class="sub-projects subProjects">
                                         <h1>100+</h1>
                                         <p>Satisfied <br>clients</p>
                                     </div>
@@ -114,27 +115,27 @@
                 </dic>
             </div>
 
-            <div class="about-me-section">
-                <div class="row about-main-section">
-                    <div class="col-12 col-md-6">
-                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1734599783/Male-model-portfolio-ideas-in-Chicago-030224.Modeling.Xander1326_retouched-copy_lsom7s.jpg" alt="" class="about-me-image">
+            <div class="about-me-section" id="about">
+                <div class="row about-main-section aboutImage">
+                    <div class="col-12 col-md-6 mb-3">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1734777533/1734777344414_iit4rv.png" alt="" class="about-me-image">
                     </div>
 
                     <div class="col-12 col-md-6">
-                        <h1 class="about-name">About <span class="me">Me</span></h1>
-                        <h5>Web Developer</h5>
+                        <h1 class="about-name mt-5 mt-md-0">About <span class="me">Me</span></h1>
+                        <h5 class="sub-designation">Web Developer</h5>
                         <p class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eius laboriosam tempora nihil amet cum sit saepe impedit corrupti commodi atque, explicabo magnam voluptates fugiat officia unde, natus, aut aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sit ipsum ad culpa labore voluptas nam nobis aspernatur rerum natus.</p>
                         <button class="about-btn">Click More</button>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="row mt-5 chelia">
+                <div class="row mt-5 chelia" id="services">
                     <div class="col-12 mb-4">
-                        <h1>My Services</h1>
+                        <h1 class="about-name mt-3 mb-3">My <span class="me">Services</span></h1>
                     </div>
                     <div class="col-md-4 col-12 mb-4 md-mb-0">
-                        <div class="web-design">
+                        <div class="web-design webDesign" style="--i:1">
                             <i class="fa-solid fa-code code"></i>
                             <div class="p-3">
                                 <p class="web-name">Web Design</p>
@@ -147,7 +148,7 @@
 
 
                     <div class="col-md-4 col-12 mb-4 md-mb-0">
-                        <div class="web-design">
+                        <div class="web-design webDesign" style="--i:3">
                             <i class="fa-solid fa-bug code"></i>
                             <div class="p-3">
                                 <p class="web-name">Debugging</p>
@@ -160,7 +161,7 @@
 
 
                     <div class="col-md-4 col-12">
-                        <div class="web-design">
+                        <div class="web-design webDesign" style="--i:5">
                             <i class="fa-solid fa-handshake code"></i>
                             <div class="p-3">
                                 <p class="web-name">App Design</p>
@@ -173,14 +174,14 @@
 
                 </div>
             </div>
-            <div class="courses-section mt-5">
+            <div class="courses-section mt-5" id="skills">
                 <div class="row">
                     <div class="col-12 mb-3">
-                        <h1>My Skills</h1>
+                        <h1 class="about-name mt-3 mb-3">My <span class="me">Skills</span></h1>
                     </div>
 
 
-                    <div class="col-12 col-md-6  couses-bg kkkkk">
+                    <div class="col-12 col-md-6  couses-bg kkkkk frontendTech">
                         <h5 class="title-name mb-5">Frontend Technologies</h5>
                         <div class="subject-sourses">
                             <div class="courses-name">
@@ -250,7 +251,7 @@
 
                     </div>
 
-                    <div class="col-12 col-md-6 couses-bg">
+                    <div class="col-12 col-md-6 couses-bg ninini backendTech">
                         <h5 class="title-name mb-5">Backend Technologies</h5>
 
 
@@ -302,7 +303,127 @@
                 </div>
             </div>
 
+            <!--projects-->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h1 class="about-name mt-3 mb-3">My <span class="me">Projects</span></h1>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="projects-main projectsMain">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1734694067/portfolio_amazon_paqik8.webp" alt="project-cover-image" class="project-cover">
+                        <div class="hover-effect-projects">
+                            <p class="project-name">Amazon Website</p>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus similique minima quae deserunt reprehenderit sint quas maxime repudiandae debitis deleniti, iusto cumque aut eligendi aliquam fuga magnam enim? Asperiores, id.</p>
+
+                            <div>
+                                <a href="https://reddyhanumanth.ccbp.tech/" target="_blank"><button class="open-projects-btn">Open Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="projects-main">
+                        <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1734694048/portfolio_restaurent_saipe0.webp" alt="project-cover-image" class="project-cover">
+                        <div class="hover-effect-projects">
+                            <p class="project-name">Restaurent Website</p>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus similique minima quae deserunt reprehenderit sint quas maxime repudiandae debitis deleniti, iusto cumque aut eligendi aliquam fuga magnam enim? Asperiores, id.</p>
+
+                            <div>
+                                <a href="https://hanumanthreddy.ccbp.tech/" target="_blank"><button class="open-projects-btn">Open Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h1 class="about-name mb-3">Contact <span class="me">Me</span></h1>
+                </div>
+                <div class="col-6 col-md-3 col-lg-4 mb-3">
+                    <div class="icons-address">
+                        <div>
+                            <div class="solid ">
+                                <i class="fa-solid fa-location-dot adress"></i><br>
+                            </div>
+                            <div>
+                                <span>SR Nagar</span>
+                                <br>
+                                <span>Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-4">
+                    <div class="icons-address">
+                        <div>
+                            <div class="solid">
+                                <i class="fa-solid fa-phone adress"></i><br>
+                            </div>
+
+                            <div>
+                                <span>+91 9177661997</span>
+                                <br>
+                                <span>+91 7981588317</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-4" id="contact">
+                    <div class="icons-address adress-in-small">
+                        <div>
+                            <div class="solid ">
+                                <i class="fa-solid fa-envelope adress"></i><br>
+                            </div>
+                            <div>
+                                <span>reddyhanumanth127@gmail.com</span>
+                                <br>
+                                <span>hanureddy899@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12">
+                    <div class="profile-main">
+                        <div class="my-profile-head">
+                            <img src="https://res.cloudinary.com/dhfrl63l6/image/upload/v1733017899/IMG_20241201_072122_a5fjyu.jpg" alt="" class="my-profile">
+                            <div>
+                                <span class="my-profile-heading">Hanumanth Reddy</span><br>
+
+                                <span class="my-profile-description">Web Developer</span><br>
+                                <div class="mail-one">
+                                    <a href="mailto:hanureddy899@gmail.com">
+                                        <i class="fa-solid fa-envelope "></i>
+                                        <span class="my-profile-mail">reddyhanumanth127@gmail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="send-mesg mt-3">Let's Work Together</p>
+                    <p class="send-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima in, laborum aut provident, dolore iure quae maxime numquam autem nisi id necessitatibus porro aperiam beatae fuga? Id neque ipsa nihil.</p>
+                    <input type="text" id="message-text" placeholder="Enter your name"><br><br>
+                    <input type="email" id="message-email" placeholder="Enter your email"><br><br>
+                    <textarea rows="3" cols="20" id="message-area" placeholder="Enter your message"></textarea>
+                    <br>
+                    <br>
+                    <button class="btn-send mb-5">Send Now</button>
+
+                </div>
+            </div>
         </div>
+
     </div>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
