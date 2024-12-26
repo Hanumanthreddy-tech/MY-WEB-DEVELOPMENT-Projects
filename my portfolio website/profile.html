@@ -15,7 +15,7 @@
 <body>
     <div class="main-portfolio-website">
         <div class="main-portfolio-website ">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <div class="container-fluid">
                     <!-- Brand -->
                     <a class="navbar-brand heading-name portfolio" href="#">Port<span class="folio-name">folio</span></a>
@@ -29,19 +29,19 @@
                     <div class="collapse navbar-collapse " id="navbarNav">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#home" style="--i:1">Home</a>
+                                <a class="nav-link" href="#home" style="--i:1" onclick="displayHome()">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about" style="--i:2">About</a>
+                                <a class="nav-link" href="#about" style="--i:2" onclick="displayAbout()">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#skills" style="--i:3">Skills</a>
+                                <a class="nav-link" href="#services" style="--i:4" onclick="displayService()">Service</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#services" style="--i:4">Service</a>
-                            </li>
+                                <a class="nav-link" href="#skills" style="--i:3" onclick="displaySkills()">Skills</a>
+                            </li>                            
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact" style="--i:5">Contact</a>
+                                <a class="nav-link" href="#contact" style="--i:5" onclick="displayContact()">Contact</a>
                             </li>
                         </ul>
 
@@ -72,11 +72,11 @@
                             <a href="https://www.instagram.com/__reddy_hanumanth__/" target="_blank"><i class="fa-brands fa-square-instagram" style="--i:3"></i></a>
                             <a href="https://www.linkedin.com/in/reddy-505334291/"><i class="fa-brands fa-linkedin" style="--i:4"></i></a>
                             <a href="https://www.youtube.com/channel/UCZ32IdpiTg5ht3tmuSfpr_w"><i class="fa-brands fa-square-youtube" style="--i:5"></i></a>
-                            <a href="https://mail.google.com/mail/u/0/#sent"><i class="fa-solid fa-square-envelope" style="--i:6"></i></a>
+                            <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin&ddm=1"><i class="fa-solid fa-square-envelope" style="--i:6"></i></a>
                         </div>
                         <div class="button-contents buttonContents mt-3">
-                            <button class="Hire-me-btn" style="--i:1">Hire Me</button>
-                            <button class="contact-me-btn" style="--i:2">Contact Me</button>
+                            <button onclick="HireMeBtn()" id="HireBtn" class="Hire-me-btn" style="--i:1">Hire Me</button>
+                            <a href="mailto:reddyhanumanth127@gmail.com"><button class="contact-me-btn" style="--i:2">Contact Me</button></a>
                         </div>
                     </div>
                     <div>
@@ -130,7 +130,7 @@
                 </div>
             </div>
             <div>
-                <div class="row mt-5 chelia" id="services">
+                <div class="row mt-5 chelia" id="services" style="padding-bottom: 100px;">
                     <div class="col-12 mb-4">
                         <h1 class="about-name mt-3 mb-3">My <span class="me">Services</span></h1>
                     </div>
@@ -174,7 +174,7 @@
 
                 </div>
             </div>
-            <div class="courses-section mt-5" id="skills">
+            <div class="courses-section mt-4" id="skills">
                 <div class="row">
                     <div class="col-12 mb-3">
                         <h1 class="about-name mt-3 mb-3">My <span class="me">Skills</span></h1>
@@ -304,7 +304,7 @@
             </div>
 
             <!--projects-->
-            <div class="row mt-5">
+            <div class="row mt-5" id="projects">
                 <div class="col-12">
                     <h1 class="about-name mt-3 mb-3">My <span class="me">Projects</span></h1>
                 </div>
@@ -338,7 +338,7 @@
             </div>
 
 
-            <div class="row mt-4">
+            <div class="row mt-4" id="contactMe">
                 <div class="col-12">
                     <h1 class="about-name mb-3">Contact <span class="me">Me</span></h1>
                 </div>
@@ -411,14 +411,17 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <p class="send-mesg mt-3">Let's Work Together</p>
-                    <p class="send-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima in, laborum aut provident, dolore iure quae maxime numquam autem nisi id necessitatibus porro aperiam beatae fuga? Id neque ipsa nihil.</p>
-                    <input type="text" id="message-text" placeholder="Enter your name"><br><br>
-                    <input type="email" id="message-email" placeholder="Enter your email"><br><br>
-                    <textarea rows="3" cols="20" id="message-area" placeholder="Enter your message"></textarea>
-                    <br>
-                    <br>
-                    <button class="btn-send mb-5">Send Now</button>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <p class="send-mesg mt-3">Let's Work Together</p>
+                        <p class="send-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima in, laborum aut provident, dolore iure quae maxime numquam autem nisi id necessitatibus porro aperiam beatae fuga? Id neque ipsa nihil.</p>
+                        <input type="hidden" name="access_key" value="37b0268d-c7ed-4044-8c26-c80e8952ddd0">
+                        <input type="text" name="name" id="message-text" placeholder="Enter your name" required><br><br>
+                        <input type="email" name="email" id="message-email" placeholder="Enter your email" required><br><br>
+                        <textarea rows="3" name="message" cols="20" id="message-area" placeholder="Enter your message" required></textarea>
+                        <br>
+                        <br>
+                        <input type="submit" class="btn-send mb-5" value="Send Now">
+                    </form>
 
                 </div>
             </div>

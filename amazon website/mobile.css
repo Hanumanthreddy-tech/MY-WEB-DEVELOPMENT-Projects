@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f6f6f7;    
     margin: 0;
     box-sizing: border-box;
     object-fit: cover;
@@ -22,11 +22,31 @@ header {
     background-color: #232f3e;
     padding: 15px 0;
 }
+.header-links a{
+    color: white;    
+}
+#amazon {
+    font-size: 25px;
+    color:rgb(255, 115, 0) !important;
+    font-weight: bold;
 
+}
+.A1,.A2,.A3,.A4{
+    padding-right: 20px;
+    transition: all .5s;
+}
+.A1:hover,.A2:hover,.A3:hover,.A4:hover{
+    color: rgb(0, 183, 255);
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: chartreuse;
+    font-size: 18px;    
+}
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 header .form-control {

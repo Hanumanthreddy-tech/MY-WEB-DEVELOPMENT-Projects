@@ -18,3 +18,28 @@ var newone = new Typed(".helloID", {
     typeSpeed: 100,
     showCursor: false
 })
+
+function HireMeBtn() {
+    let button = document.getElementById('HireBtn');
+    if (button.textContent === "Hire Me") {
+        button.textContent = "You Hired";
+        button.style.fontWeight = 550;
+        button.style.backgroundColor = "green";
+        button.style.color = "white";
+        button.style.borderColor = "white";
+    } else {
+        button.textContent = "Hire Me";
+        button.style.fontWeight = 550;
+        button.style.backgroundColor = "transparent";
+        button.style.color = "white";
+        button.style.borderColor = "cyan";
+    }
+}
+
+
+
+
+ 
+
+const navigationHeight=document.querySelector('.collapse navbar-collapse').offseHeight;
+document.documentElement.style.setProperty('--scroll-padding',navigationHeight + "px ")
